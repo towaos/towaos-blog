@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>CTF on .towaos</title>
+        <link>http://localhost:1313/categories/ctf/</link>
+        <description>Recent content in CTF on .towaos</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>Example Person</copyright>
+        <lastBuildDate>Fri, 19 Dec 2025 17:29:03 +0900</lastBuildDate><atom:link href="http://localhost:1313/categories/ctf/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>First Blog</title>
+        <link>http://localhost:1313/p/first-blog/</link>
+        <pubDate>Fri, 19 Dec 2025 17:29:03 +0900</pubDate>
+        
+        <guid>http://localhost:1313/p/first-blog/</guid>
+        <description>&lt;h1 id=&#34;hello&#34;&gt;hello
+&lt;/h1&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

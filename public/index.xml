@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>.towaos</title>
+        <link>http://localhost:1313/</link>
+        <description>Recent content on .towaos</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>Example Person</copyright>
+        <lastBuildDate>Fri, 19 Dec 2025 17:29:03 +0900</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>First Blog</title>
+        <link>http://localhost:1313/p/first-blog/</link>
+        <pubDate>Fri, 19 Dec 2025 17:29:03 +0900</pubDate>
+        
+        <guid>http://localhost:1313/p/first-blog/</guid>
+        <description>&lt;h1 id=&#34;hello&#34;&gt;hello
+&lt;/h1&gt;</description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>http://localhost:1313/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Links</title>
+        <link>http://localhost:1313/links/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/links/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>http://localhost:1313/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
