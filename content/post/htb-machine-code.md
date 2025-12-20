@@ -1,13 +1,13 @@
 +++
 date = '2025-12-20T18:17:29+09:00'
 draft = false
-title = 'Code - HTB Writeup'
+title = 'Code - HTB'
 
 categories = ["Machine"]
 tags = ["HTB", "Writeup", "Linux", "Web"]
 +++
 
-# Code - HTB Writeup
+# Code - HackTheBox
 
 ## Machine Information
 | Title | Data |

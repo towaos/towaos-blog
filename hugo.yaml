@@ -2,7 +2,7 @@ baseurl: https://blog.towaos.com/
 languageCode: en
 theme: hugo-theme-stack
 title: .towaos
-copyright: Example Person
+copyright: .towaos
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
@@ -52,7 +52,7 @@ params:
     favicon: /img/towaos.png # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
     footer:
-        since: 2020
+        since: 2025
         customText:
 
     dateFormat:

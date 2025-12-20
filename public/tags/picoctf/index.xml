@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>CTF on .towaos</title>
-        <link>http://localhost:1313/categories/ctf/</link>
-        <description>Recent content in CTF on .towaos</description>
+        <title>picoCTF on .towaos</title>
+        <link>http://localhost:1313/tags/picoctf/</link>
+        <description>Recent content in picoCTF on .towaos</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>.towaos</copyright>
-        <lastBuildDate>Sat, 20 Dec 2025 22:49:45 +0900</lastBuildDate><atom:link href="http://localhost:1313/categories/ctf/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 20 Dec 2025 22:49:45 +0900</lastBuildDate><atom:link href="http://localhost:1313/tags/picoctf/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>CrackTheGate1 - picoCTF</title>
         <link>http://localhost:1313/p/crackthegate1-picoctf/</link>
         <pubDate>Sat, 20 Dec 2025 22:49:45 +0900</pubDate>
