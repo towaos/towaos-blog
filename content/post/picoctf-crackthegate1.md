@@ -1,6 +1,6 @@
 +++
 date = '2025-12-20T22:49:45+09:00'
-draft = true
+draft = false
 title = 'CrackTheGate1 - picoCTF'
 
 categories = ["CTF"]
