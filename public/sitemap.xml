@@ -8,10 +8,10 @@
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-12-19T17:29:03+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ctf/</loc>
+    <loc>http://localhost:1313/categories/ctf/</loc>
     <lastmod>2025-12-19T17:29:03+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/ctf/</loc>
+    <loc>http://localhost:1313/tags/ctf/</loc>
     <lastmod>2025-12-19T17:29:03+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/p/first-blog/</loc>
