@@ -1,7 +1,10 @@
 +++
 date = '2025-12-21T21:09:06+09:00'
 draft = false
-title = 'Picoctf Crackthegate2'
+title = 'CrackTheGate2 - picoCTF'
+
+categories = ["CTF"]
+tags = ["picoCTF", "Writeup", "Web"]
 +++
 # CrackTheGate2 - picoCTF
 
