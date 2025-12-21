@@ -83,8 +83,9 @@ data = {
   "email":"ctf-player@picoctf.org",
   "password":"password"
 }
+endpoint = "/login"
 
-req = requests.post(urljoin(URL, "/login"), headers=headers, data=data)
+req = requests.post(urljoin(URL, endpoint), headers=headers, json=data)
 
 print(req.text)
 ```
