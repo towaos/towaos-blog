@@ -7,7 +7,7 @@ categories = ["CTF"]
 tags = ["picoCTF", "Writeup", "Web", "Flask", "Flask Session"]
 +++
 
-# Most cookies - picoCTF
+# MostCookies - picoCTF
 
 ## 初期調査
 
