@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DirTraversal on towaos blog</title>
+    <link>http://localhost:1313/tags/dirtraversal/</link>
+    <description>Recent content in DirTraversal on towaos blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Jan 2026 23:02:47 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/dirtraversal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SWEInternAtGirlyPopInc - ScarletCTF</title>
+      <link>http://localhost:1313/post/ctf/scarlet/sweinternatgirlypopinc/</link>
+      <pubDate>Mon, 12 Jan 2026 23:02:47 +0900</pubDate>
+      <guid>http://localhost:1313/post/ctf/scarlet/sweinternatgirlypopinc/</guid>
+      <description>SWE intern at girly pop incのWriteupです。</description>
+    </item>
+  </channel>
+</rss>

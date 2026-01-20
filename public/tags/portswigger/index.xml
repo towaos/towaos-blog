@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PortSwigger on towaos blog</title>
+    <link>http://localhost:1313/tags/portswigger/</link>
+    <description>Recent content in PortSwigger on towaos blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Jan 2026 22:26:08 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/portswigger/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CrossSiteScripting(DOM) - PortSwigger</title>
+      <link>http://localhost:1313/post/portswigger/crosssitescripting/dom/</link>
+      <pubDate>Sat, 17 Jan 2026 22:26:08 +0900</pubDate>
+      <guid>http://localhost:1313/post/portswigger/crosssitescripting/dom/</guid>
+      <description>PortSwiggerのXSS-DOMについて</description>
+    </item>
+    <item>
+      <title>BlindBasedSQLi - PortSwigger</title>
+      <link>http://localhost:1313/post/portswigger/sqlinjection/blind/</link>
+      <pubDate>Thu, 08 Jan 2026 21:37:18 +0900</pubDate>
+      <guid>http://localhost:1313/post/portswigger/sqlinjection/blind/</guid>
+      <description>PortSwiggerのSQLi-Blindについて</description>
+    </item>
+    <item>
+      <title>UnionBasedSQLi - PortSwigger</title>
+      <link>http://localhost:1313/post/portswigger/sqlinjection/union/</link>
+      <pubDate>Thu, 08 Jan 2026 16:07:13 +0900</pubDate>
+      <guid>http://localhost:1313/post/portswigger/sqlinjection/union/</guid>
+      <description>PortSwiggerのSQLi-Unionについて</description>
+    </item>
+  </channel>
+</rss>

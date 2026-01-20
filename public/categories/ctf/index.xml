@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CTF on towaos blog</title>
+    <link>http://localhost:1313/categories/ctf/</link>
+    <description>Recent content in CTF on towaos blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Jan 2026 23:02:47 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SWEInternAtGirlyPopInc - ScarletCTF</title>
+      <link>http://localhost:1313/post/ctf/scarlet/sweinternatgirlypopinc/</link>
+      <pubDate>Mon, 12 Jan 2026 23:02:47 +0900</pubDate>
+      <guid>http://localhost:1313/post/ctf/scarlet/sweinternatgirlypopinc/</guid>
+      <description>SWE intern at girly pop incのWriteupです。</description>
+    </item>
+    <item>
+      <title>Picobrowser - picoCTF</title>
+      <link>http://localhost:1313/post/ctf/pico/picobrowser/</link>
+      <pubDate>Mon, 05 Jan 2026 22:23:28 +0900</pubDate>
+      <guid>http://localhost:1313/post/ctf/pico/picobrowser/</guid>
+      <description>Pico BrowserのWriteupです。</description>
+    </item>
+    <item>
+      <title>IrishNameRepo3 - picoCTF</title>
+      <link>http://localhost:1313/post/ctf/pico/irishnamerepo3/</link>
+      <pubDate>Mon, 05 Jan 2026 22:17:35 +0900</pubDate>
+      <guid>http://localhost:1313/post/ctf/pico/irishnamerepo3/</guid>
+      <description>Irish Name Repo3のWriteupです。</description>
+    </item>
+    <item>
+      <title>IrishNameRepo2 - picoCTF</title>
+      <link>http://localhost:1313/post/ctf/pico/irishnamerepo2/</link>
+      <pubDate>Mon, 05 Jan 2026 22:14:44 +0900</pubDate>
+      <guid>http://localhost:1313/post/ctf/pico/irishnamerepo2/</guid>
+      <description>Irish Name Repo2のWriteupです。</description>
+    </item>
+    <item>
+      <title>IrishNameRepo1 - picoCTF</title>
+      <link>http://localhost:1313/post/ctf/pico/irishnamerepo1/</link>
+      <pubDate>Mon, 05 Jan 2026 22:10:29 +0900</pubDate>
+      <guid>http://localhost:1313/post/ctf/pico/irishnamerepo1/</guid>
+      <description>Irish Name Repo1のWriteupです。</description>
+    </item>
+    <item>
+      <title>StartupCompany - picoCTF</title>
+      <link>http://localhost:1313/post/ctf/pico/startupcompany/</link>
+      <pubDate>Sun, 04 Jan 2026 10:55:36 +0900</pubDate>
+      <guid>http://localhost:1313/post/ctf/pico/startupcompany/</guid>
+      <description>Start Up CompanyのWriteupです。</description>
+    </item>
+    <item>
+      <title>ItIsMyBirthday - picoCTF</title>
+      <link>http://localhost:1313/post/ctf/pico/itismybirthday/</link>
+      <pubDate>Thu, 01 Jan 2026 22:10:05 +0900</pubDate>
+      <guid>http://localhost:1313/post/ctf/pico/itismybirthday/</guid>
+      <description>It Is My BirthdayのWriteupです。</description>
+    </item>
+    <item>
+      <title>WebGauntlet3 - picoCTF</title>
+      <link>http://localhost:1313/post/ctf/pico/webgauntlet3/</link>
+      <pubDate>Tue, 30 Dec 2025 17:00:29 +0900</pubDate>
+      <guid>http://localhost:1313/post/ctf/pico/webgauntlet3/</guid>
+      <description>Web Gauntlet3のWriteupです。</description>
+    </item>
+    <item>
+      <title>WebGauntlet2 - picoCTF</title>
+      <link>http://localhost:1313/post/ctf/pico/webgauntlet2/</link>
+      <pubDate>Sat, 27 Dec 2025 17:09:28 +0900</pubDate>
+      <guid>http://localhost:1313/post/ctf/pico/webgauntlet2/</guid>
+      <description>Web Gauntlet2のWriteupです。</description>
+    </item>
+    <item>
+      <title>MostCookie - picoCTF</title>
+      <link>http://localhost:1313/post/ctf/pico/mostcookie/</link>
+      <pubDate>Fri, 26 Dec 2025 16:28:33 +0900</pubDate>
+      <guid>http://localhost:1313/post/ctf/pico/mostcookie/</guid>
+      <description>Most CookieのWriteupです。</description>
+    </item>
+    <item>
+      <title>SuperSerial - picoCTF</title>
+      <link>http://localhost:1313/post/ctf/pico/superserial/</link>
+      <pubDate>Wed, 24 Dec 2025 23:01:02 +0900</pubDate>
+      <guid>http://localhost:1313/post/ctf/pico/superserial/</guid>
+      <description>Super SerialのWriteupです。</description>
+    </item>
+    <item>
+      <title>JAuth - picoCTF</title>
+      <link>http://localhost:1313/post/ctf/pico/jauth/</link>
+      <pubDate>Tue, 23 Dec 2025 21:17:05 +0900</pubDate>
+      <guid>http://localhost:1313/post/ctf/pico/jauth/</guid>
+      <description>JAuthのWriteupです。</description>
+    </item>
+    <item>
+      <title>SSTI2 - picoCTF</title>
+      <link>http://localhost:1313/post/ctf/pico/ssti2/</link>
+      <pubDate>Mon, 22 Dec 2025 22:16:47 +0900</pubDate>
+      <guid>http://localhost:1313/post/ctf/pico/ssti2/</guid>
+      <description>SSTI2のWriteupです。</description>
+    </item>
+    <item>
+      <title>CrackTheGate2 - picoCTF</title>
+      <link>http://localhost:1313/post/ctf/pico/crackthegate2/</link>
+      <pubDate>Sun, 21 Dec 2025 21:09:06 +0900</pubDate>
+      <guid>http://localhost:1313/post/ctf/pico/crackthegate2/</guid>
+      <description>Crack The Gate2のWriteupです。</description>
+    </item>
+    <item>
+      <title>CrackTheGate1 - picoCTF</title>
+      <link>http://localhost:1313/post/ctf/pico/crackthegate1/</link>
+      <pubDate>Sat, 20 Dec 2025 22:49:45 +0900</pubDate>
+      <guid>http://localhost:1313/post/ctf/pico/crackthegate1/</guid>
+      <description>Crack The Gate1のWriteupです。</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on towaos blog</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on towaos blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Jan 2026 15:32:10 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTB</title>
+      <link>http://localhost:1313/categories/htb/</link>
+      <pubDate>Mon, 19 Jan 2026 15:32:10 +0900</pubDate>
+      <guid>http://localhost:1313/categories/htb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PortSwigger</title>
+      <link>http://localhost:1313/categories/portswigger/</link>
+      <pubDate>Sat, 17 Jan 2026 22:26:08 +0900</pubDate>
+      <guid>http://localhost:1313/categories/portswigger/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CTF</title>
+      <link>http://localhost:1313/categories/ctf/</link>
+      <pubDate>Mon, 12 Jan 2026 23:02:47 +0900</pubDate>
+      <guid>http://localhost:1313/categories/ctf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Setup</title>
+      <link>http://localhost:1313/categories/setup/</link>
+      <pubDate>Sun, 28 Dec 2025 20:56:11 +0900</pubDate>
+      <guid>http://localhost:1313/categories/setup/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'towaos blog'
+theme = "github-style"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[pagination]
+pagerSize = 15
+path = "page"
+
+
+[markup.goldmark.renderer]
+unsafe = true
+
+ignoreLogs = ["warning-goldmark-raw-html"]
+
+[params]
+author = "towaos"
+description = "Let's Gooo!!"
+avatar = "/images/towaos_icon.png"
+github = "towaos"
+url = "https://blog.towaos.com"
+favicon = "/images/towaos.png"
+headerIcon = "images/towaos_icon.png"
+userStatusEmoji = "😀"
