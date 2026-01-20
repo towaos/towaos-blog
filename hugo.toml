@@ -18,6 +18,7 @@ url = "https://blog.towaos.com"
 favicon = "/images/towaos.png"
 headerIcon = "images/towaos_icon.png"
 userStatusEmoji = "😀"
+lastmod = true
 
 [markup]
   [markup.goldmark.renderer]
