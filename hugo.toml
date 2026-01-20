@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'towaos blog'
 theme = "github-style"
@@ -9,12 +9,6 @@ pygmentsUseClasses = true
 pagerSize = 15
 path = "page"
 
-
-[markup.goldmark.renderer]
-unsafe = true
-
-ignoreLogs = ["warning-goldmark-raw-html"]
-
 [params]
 author = "towaos"
 description = "Let's Gooo!!"
@@ -24,3 +18,8 @@ url = "https://blog.towaos.com"
 favicon = "/images/towaos.png"
 headerIcon = "images/towaos_icon.png"
 userStatusEmoji = "😀"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+ignoreLogs = ['warning-goldmark-raw-html']

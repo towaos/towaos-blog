@@ -2,214 +2,214 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
     <lastmod>2026-01-19T15:32:10+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/htb/machine/conversor/</loc>
+    <loc>//localhost:1313/post/htb/machine/conversor/</loc>
     <lastmod>2026-01-19T15:32:10+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cve-2024-48990/</loc>
+    <loc>//localhost:1313/tags/cve-2024-48990/</loc>
     <lastmod>2026-01-19T15:32:10+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/htb/</loc>
+    <loc>//localhost:1313/categories/htb/</loc>
     <lastmod>2026-01-19T15:32:10+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/htb/</loc>
+    <loc>//localhost:1313/tags/htb/</loc>
     <lastmod>2026-01-19T15:32:10+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
+    <loc>//localhost:1313/tags/linux/</loc>
     <lastmod>2026-01-19T15:32:10+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/machine/</loc>
+    <loc>//localhost:1313/tags/machine/</loc>
     <lastmod>2026-01-19T15:32:10+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/needrestart/</loc>
+    <loc>//localhost:1313/tags/needrestart/</loc>
     <lastmod>2026-01-19T15:32:10+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
     <lastmod>2026-01-19T15:32:10+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2026-01-19T15:32:10+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/writeup/</loc>
+    <loc>//localhost:1313/tags/writeup/</loc>
     <lastmod>2026-01-19T15:32:10+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/xml/</loc>
+    <loc>//localhost:1313/tags/xml/</loc>
     <lastmod>2026-01-19T15:32:10+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/xslt/</loc>
+    <loc>//localhost:1313/tags/xslt/</loc>
     <lastmod>2026-01-19T15:32:10+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/portswigger/crosssitescripting/dom/</loc>
+    <loc>//localhost:1313/post/portswigger/cross-site-scripting/dom/</loc>
     <lastmod>2026-01-17T22:26:08+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/dom/</loc>
+    <loc>//localhost:1313/tags/dom/</loc>
     <lastmod>2026-01-17T22:26:08+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/portswigger/</loc>
+    <loc>//localhost:1313/categories/portswigger/</loc>
     <lastmod>2026-01-17T22:26:08+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/portswigger/</loc>
+    <loc>//localhost:1313/tags/portswigger/</loc>
     <lastmod>2026-01-17T22:26:08+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/web/</loc>
+    <loc>//localhost:1313/tags/web/</loc>
     <lastmod>2026-01-17T22:26:08+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/xss/</loc>
+    <loc>//localhost:1313/tags/xss/</loc>
     <lastmod>2026-01-17T22:26:08+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cve-2025-32463/</loc>
+    <loc>//localhost:1313/tags/cve-2025-32463/</loc>
     <lastmod>2026-01-16T22:17:39+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/htb/machine/expressway/</loc>
+    <loc>//localhost:1313/post/htb/machine/expressway/</loc>
     <lastmod>2026-01-16T22:17:39+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ike/</loc>
+    <loc>//localhost:1313/tags/ike/</loc>
     <lastmod>2026-01-16T22:17:39+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/psk/</loc>
+    <loc>//localhost:1313/tags/psk/</loc>
     <lastmod>2026-01-16T22:17:39+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sudo/</loc>
+    <loc>//localhost:1313/tags/sudo/</loc>
     <lastmod>2026-01-16T22:17:39+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/ctf/</loc>
+    <loc>//localhost:1313/categories/ctf/</loc>
     <lastmod>2026-01-12T23:02:47+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/dirtraversal/</loc>
+    <loc>//localhost:1313/tags/dirtraversal/</loc>
     <lastmod>2026-01-12T23:02:47+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/git/</loc>
+    <loc>//localhost:1313/tags/git/</loc>
     <lastmod>2026-01-12T23:02:47+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/scarletctf/</loc>
+    <loc>//localhost:1313/tags/scarletctf/</loc>
     <lastmod>2026-01-12T23:02:47+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/ctf/scarlet/sweinternatgirlypopinc/</loc>
+    <loc>//localhost:1313/post/ctf/scarlet/swe-intern-at-girly-pop-inc/</loc>
     <lastmod>2026-01-12T23:02:47+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/blind/</loc>
+    <loc>//localhost:1313/tags/blind/</loc>
     <lastmod>2026-01-08T21:37:18+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/portswigger/sqlinjection/blind/</loc>
+    <loc>//localhost:1313/post/portswigger/sqlinjection/blind/</loc>
     <lastmod>2026-01-08T21:37:18+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sqli/</loc>
+    <loc>//localhost:1313/tags/sqli/</loc>
     <lastmod>2026-01-08T21:37:18+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/union/</loc>
+    <loc>//localhost:1313/tags/union/</loc>
     <lastmod>2026-01-08T16:07:13+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/portswigger/sqlinjection/union/</loc>
+    <loc>//localhost:1313/post/portswigger/sqlinjection/union/</loc>
     <lastmod>2026-01-08T16:07:13+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/ctf/pico/picobrowser/</loc>
+    <loc>//localhost:1313/post/ctf/pico/pico-browser/</loc>
     <lastmod>2026-01-05T22:23:28+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/picoctf/</loc>
+    <loc>//localhost:1313/tags/picoctf/</loc>
     <lastmod>2026-01-05T22:23:28+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/useragent/</loc>
+    <loc>//localhost:1313/tags/useragent/</loc>
     <lastmod>2026-01-05T22:23:28+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/caesarcipher/</loc>
+    <loc>//localhost:1313/tags/caesarcipher/</loc>
     <lastmod>2026-01-05T22:17:35+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/ctf/pico/irishnamerepo3/</loc>
+    <loc>//localhost:1313/post/ctf/pico/irish-name-repo3/</loc>
     <lastmod>2026-01-05T22:17:35+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sqlite/</loc>
+    <loc>//localhost:1313/tags/sqlite/</loc>
     <lastmod>2026-01-05T22:17:35+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/ctf/pico/irishnamerepo2/</loc>
+    <loc>//localhost:1313/post/ctf/pico/irish-name-repo2/</loc>
     <lastmod>2026-01-05T22:14:44+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/ctf/pico/irishnamerepo1/</loc>
+    <loc>//localhost:1313/post/ctf/pico/irish-name-repo1/</loc>
     <lastmod>2026-01-05T22:10:29+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/ctf/pico/startupcompany/</loc>
+    <loc>//localhost:1313/post/ctf/pico/startup-company/</loc>
     <lastmod>2026-01-04T10:55:36+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/ctf/pico/itismybirthday/</loc>
+    <loc>//localhost:1313/post/ctf/pico/it-is-my-birthday/</loc>
     <lastmod>2026-01-01T22:10:05+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/md5/</loc>
+    <loc>//localhost:1313/tags/md5/</loc>
     <lastmod>2026-01-01T22:10:05+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/misc/happynewyear-2026/</loc>
+    <loc>//localhost:1313/post/misc/happynewyear-2026/</loc>
     <lastmod>2026-01-01T13:34:31+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/happynewyear/</loc>
+    <loc>//localhost:1313/tags/happynewyear/</loc>
     <lastmod>2026-01-01T13:34:31+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/ctf/pico/webgauntlet3/</loc>
+    <loc>//localhost:1313/post/ctf/pico/web-gauntlet3/</loc>
     <lastmod>2025-12-30T17:00:29+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/fly.io/</loc>
+    <loc>//localhost:1313/tags/fly.io/</loc>
     <lastmod>2025-12-28T20:56:11+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/fly/server-setup/</loc>
+    <loc>//localhost:1313/post/fly/server-setup/</loc>
     <lastmod>2025-12-28T20:56:11+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/setup/</loc>
+    <loc>//localhost:1313/categories/setup/</loc>
     <lastmod>2025-12-28T20:56:11+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/setup/</loc>
+    <loc>//localhost:1313/tags/setup/</loc>
     <lastmod>2025-12-28T20:56:11+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/ctf/pico/webgauntlet2/</loc>
+    <loc>//localhost:1313/post/ctf/pico/web-gauntlet2/</loc>
     <lastmod>2025-12-27T17:09:28+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/flask/</loc>
+    <loc>//localhost:1313/tags/flask/</loc>
     <lastmod>2025-12-26T16:28:33+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/flask-session/</loc>
+    <loc>//localhost:1313/tags/flask-session/</loc>
     <lastmod>2025-12-26T16:28:33+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/ctf/pico/mostcookie/</loc>
+    <loc>//localhost:1313/post/ctf/pico/most-cookie/</loc>
     <lastmod>2025-12-26T16:28:33+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/php-object/</loc>
+    <loc>//localhost:1313/tags/php-object/</loc>
     <lastmod>2025-12-24T23:01:02+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/ctf/pico/superserial/</loc>
+    <loc>//localhost:1313/post/ctf/pico/super-serial/</loc>
     <lastmod>2025-12-24T23:01:02+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/ctf/pico/jauth/</loc>
+    <loc>//localhost:1313/post/ctf/pico/jauth/</loc>
     <lastmod>2025-12-23T21:17:05+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/jwt/</loc>
+    <loc>//localhost:1313/tags/jwt/</loc>
     <lastmod>2025-12-23T21:17:05+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ssti/</loc>
+    <loc>//localhost:1313/tags/ssti/</loc>
     <lastmod>2025-12-22T22:16:47+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/ctf/pico/ssti2/</loc>
+    <loc>//localhost:1313/post/ctf/pico/ssti2/</loc>
     <lastmod>2025-12-22T22:16:47+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/command/</loc>
+    <loc>//localhost:1313/tags/command/</loc>
     <lastmod>2025-12-22T16:47:28+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/docker/</loc>
+    <loc>//localhost:1313/tags/docker/</loc>
     <lastmod>2025-12-22T16:47:28+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/docker/commands/</loc>
+    <loc>//localhost:1313/post/docker/commands/</loc>
     <lastmod>2025-12-22T16:47:28+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/ctf/pico/crackthegate2/</loc>
+    <loc>//localhost:1313/post/ctf/pico/crack-the-gate2/</loc>
     <lastmod>2025-12-21T21:09:06+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/ctf/pico/crackthegate1/</loc>
+    <loc>//localhost:1313/post/ctf/pico/crack-the-gate1/</loc>
     <lastmod>2025-12-20T22:49:45+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/htb/machine/code/</loc>
+    <loc>//localhost:1313/post/htb/machine/code/</loc>
     <lastmod>2025-12-20T18:17:29+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/misc/first-blog/</loc>
+    <loc>//localhost:1313/post/misc/first-blog/</loc>
     <lastmod>2025-12-19T17:29:03+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/nicetomeetyou/</loc>
+    <loc>//localhost:1313/tags/nicetomeetyou/</loc>
     <lastmod>2025-12-19T17:29:03+09:00</lastmod>
   </url>
 </urlset>

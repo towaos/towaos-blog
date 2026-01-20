@@ -2,143 +2,143 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web on towaos blog</title>
-    <link>http://localhost:1313/tags/web/</link>
+    <link>//localhost:1313/tags/web/</link>
     <description>Recent content in Web on towaos blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 17 Jan 2026 22:26:08 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CrossSiteScripting(DOM) - PortSwigger</title>
-      <link>http://localhost:1313/post/portswigger/crosssitescripting/dom/</link>
+      <link>//localhost:1313/post/portswigger/cross-site-scripting/dom/</link>
       <pubDate>Sat, 17 Jan 2026 22:26:08 +0900</pubDate>
-      <guid>http://localhost:1313/post/portswigger/crosssitescripting/dom/</guid>
+      <guid>//localhost:1313/post/portswigger/cross-site-scripting/dom/</guid>
       <description>PortSwiggerのXSS-DOMについて</description>
     </item>
     <item>
       <title>SWEInternAtGirlyPopInc - ScarletCTF</title>
-      <link>http://localhost:1313/post/ctf/scarlet/sweinternatgirlypopinc/</link>
+      <link>//localhost:1313/post/ctf/scarlet/swe-intern-at-girly-pop-inc/</link>
       <pubDate>Mon, 12 Jan 2026 23:02:47 +0900</pubDate>
-      <guid>http://localhost:1313/post/ctf/scarlet/sweinternatgirlypopinc/</guid>
+      <guid>//localhost:1313/post/ctf/scarlet/swe-intern-at-girly-pop-inc/</guid>
       <description>SWE intern at girly pop incのWriteupです。</description>
     </item>
     <item>
       <title>BlindBasedSQLi - PortSwigger</title>
-      <link>http://localhost:1313/post/portswigger/sqlinjection/blind/</link>
+      <link>//localhost:1313/post/portswigger/sqlinjection/blind/</link>
       <pubDate>Thu, 08 Jan 2026 21:37:18 +0900</pubDate>
-      <guid>http://localhost:1313/post/portswigger/sqlinjection/blind/</guid>
+      <guid>//localhost:1313/post/portswigger/sqlinjection/blind/</guid>
       <description>PortSwiggerのSQLi-Blindについて</description>
     </item>
     <item>
       <title>UnionBasedSQLi - PortSwigger</title>
-      <link>http://localhost:1313/post/portswigger/sqlinjection/union/</link>
+      <link>//localhost:1313/post/portswigger/sqlinjection/union/</link>
       <pubDate>Thu, 08 Jan 2026 16:07:13 +0900</pubDate>
-      <guid>http://localhost:1313/post/portswigger/sqlinjection/union/</guid>
+      <guid>//localhost:1313/post/portswigger/sqlinjection/union/</guid>
       <description>PortSwiggerのSQLi-Unionについて</description>
     </item>
     <item>
       <title>Picobrowser - picoCTF</title>
-      <link>http://localhost:1313/post/ctf/pico/picobrowser/</link>
+      <link>//localhost:1313/post/ctf/pico/pico-browser/</link>
       <pubDate>Mon, 05 Jan 2026 22:23:28 +0900</pubDate>
-      <guid>http://localhost:1313/post/ctf/pico/picobrowser/</guid>
+      <guid>//localhost:1313/post/ctf/pico/pico-browser/</guid>
       <description>Pico BrowserのWriteupです。</description>
     </item>
     <item>
       <title>IrishNameRepo3 - picoCTF</title>
-      <link>http://localhost:1313/post/ctf/pico/irishnamerepo3/</link>
+      <link>//localhost:1313/post/ctf/pico/irish-name-repo3/</link>
       <pubDate>Mon, 05 Jan 2026 22:17:35 +0900</pubDate>
-      <guid>http://localhost:1313/post/ctf/pico/irishnamerepo3/</guid>
+      <guid>//localhost:1313/post/ctf/pico/irish-name-repo3/</guid>
       <description>Irish Name Repo3のWriteupです。</description>
     </item>
     <item>
       <title>IrishNameRepo2 - picoCTF</title>
-      <link>http://localhost:1313/post/ctf/pico/irishnamerepo2/</link>
+      <link>//localhost:1313/post/ctf/pico/irish-name-repo2/</link>
       <pubDate>Mon, 05 Jan 2026 22:14:44 +0900</pubDate>
-      <guid>http://localhost:1313/post/ctf/pico/irishnamerepo2/</guid>
+      <guid>//localhost:1313/post/ctf/pico/irish-name-repo2/</guid>
       <description>Irish Name Repo2のWriteupです。</description>
     </item>
     <item>
       <title>IrishNameRepo1 - picoCTF</title>
-      <link>http://localhost:1313/post/ctf/pico/irishnamerepo1/</link>
+      <link>//localhost:1313/post/ctf/pico/irish-name-repo1/</link>
       <pubDate>Mon, 05 Jan 2026 22:10:29 +0900</pubDate>
-      <guid>http://localhost:1313/post/ctf/pico/irishnamerepo1/</guid>
+      <guid>//localhost:1313/post/ctf/pico/irish-name-repo1/</guid>
       <description>Irish Name Repo1のWriteupです。</description>
     </item>
     <item>
       <title>StartupCompany - picoCTF</title>
-      <link>http://localhost:1313/post/ctf/pico/startupcompany/</link>
+      <link>//localhost:1313/post/ctf/pico/startup-company/</link>
       <pubDate>Sun, 04 Jan 2026 10:55:36 +0900</pubDate>
-      <guid>http://localhost:1313/post/ctf/pico/startupcompany/</guid>
+      <guid>//localhost:1313/post/ctf/pico/startup-company/</guid>
       <description>Start Up CompanyのWriteupです。</description>
     </item>
     <item>
       <title>ItIsMyBirthday - picoCTF</title>
-      <link>http://localhost:1313/post/ctf/pico/itismybirthday/</link>
+      <link>//localhost:1313/post/ctf/pico/it-is-my-birthday/</link>
       <pubDate>Thu, 01 Jan 2026 22:10:05 +0900</pubDate>
-      <guid>http://localhost:1313/post/ctf/pico/itismybirthday/</guid>
+      <guid>//localhost:1313/post/ctf/pico/it-is-my-birthday/</guid>
       <description>It Is My BirthdayのWriteupです。</description>
     </item>
     <item>
       <title>WebGauntlet3 - picoCTF</title>
-      <link>http://localhost:1313/post/ctf/pico/webgauntlet3/</link>
+      <link>//localhost:1313/post/ctf/pico/web-gauntlet3/</link>
       <pubDate>Tue, 30 Dec 2025 17:00:29 +0900</pubDate>
-      <guid>http://localhost:1313/post/ctf/pico/webgauntlet3/</guid>
+      <guid>//localhost:1313/post/ctf/pico/web-gauntlet3/</guid>
       <description>Web Gauntlet3のWriteupです。</description>
     </item>
     <item>
       <title>WebGauntlet2 - picoCTF</title>
-      <link>http://localhost:1313/post/ctf/pico/webgauntlet2/</link>
+      <link>//localhost:1313/post/ctf/pico/web-gauntlet2/</link>
       <pubDate>Sat, 27 Dec 2025 17:09:28 +0900</pubDate>
-      <guid>http://localhost:1313/post/ctf/pico/webgauntlet2/</guid>
+      <guid>//localhost:1313/post/ctf/pico/web-gauntlet2/</guid>
       <description>Web Gauntlet2のWriteupです。</description>
     </item>
     <item>
       <title>MostCookie - picoCTF</title>
-      <link>http://localhost:1313/post/ctf/pico/mostcookie/</link>
+      <link>//localhost:1313/post/ctf/pico/most-cookie/</link>
       <pubDate>Fri, 26 Dec 2025 16:28:33 +0900</pubDate>
-      <guid>http://localhost:1313/post/ctf/pico/mostcookie/</guid>
+      <guid>//localhost:1313/post/ctf/pico/most-cookie/</guid>
       <description>Most CookieのWriteupです。</description>
     </item>
     <item>
       <title>SuperSerial - picoCTF</title>
-      <link>http://localhost:1313/post/ctf/pico/superserial/</link>
+      <link>//localhost:1313/post/ctf/pico/super-serial/</link>
       <pubDate>Wed, 24 Dec 2025 23:01:02 +0900</pubDate>
-      <guid>http://localhost:1313/post/ctf/pico/superserial/</guid>
+      <guid>//localhost:1313/post/ctf/pico/super-serial/</guid>
       <description>Super SerialのWriteupです。</description>
     </item>
     <item>
       <title>JAuth - picoCTF</title>
-      <link>http://localhost:1313/post/ctf/pico/jauth/</link>
+      <link>//localhost:1313/post/ctf/pico/jauth/</link>
       <pubDate>Tue, 23 Dec 2025 21:17:05 +0900</pubDate>
-      <guid>http://localhost:1313/post/ctf/pico/jauth/</guid>
+      <guid>//localhost:1313/post/ctf/pico/jauth/</guid>
       <description>JAuthのWriteupです。</description>
     </item>
     <item>
       <title>SSTI2 - picoCTF</title>
-      <link>http://localhost:1313/post/ctf/pico/ssti2/</link>
+      <link>//localhost:1313/post/ctf/pico/ssti2/</link>
       <pubDate>Mon, 22 Dec 2025 22:16:47 +0900</pubDate>
-      <guid>http://localhost:1313/post/ctf/pico/ssti2/</guid>
+      <guid>//localhost:1313/post/ctf/pico/ssti2/</guid>
       <description>SSTI2のWriteupです。</description>
     </item>
     <item>
       <title>CrackTheGate2 - picoCTF</title>
-      <link>http://localhost:1313/post/ctf/pico/crackthegate2/</link>
+      <link>//localhost:1313/post/ctf/pico/crack-the-gate2/</link>
       <pubDate>Sun, 21 Dec 2025 21:09:06 +0900</pubDate>
-      <guid>http://localhost:1313/post/ctf/pico/crackthegate2/</guid>
+      <guid>//localhost:1313/post/ctf/pico/crack-the-gate2/</guid>
       <description>Crack The Gate2のWriteupです。</description>
     </item>
     <item>
       <title>CrackTheGate1 - picoCTF</title>
-      <link>http://localhost:1313/post/ctf/pico/crackthegate1/</link>
+      <link>//localhost:1313/post/ctf/pico/crack-the-gate1/</link>
       <pubDate>Sat, 20 Dec 2025 22:49:45 +0900</pubDate>
-      <guid>http://localhost:1313/post/ctf/pico/crackthegate1/</guid>
+      <guid>//localhost:1313/post/ctf/pico/crack-the-gate1/</guid>
       <description>Crack The Gate1のWriteupです。</description>
     </item>
     <item>
       <title>Code - HTB</title>
-      <link>http://localhost:1313/post/htb/machine/code/</link>
+      <link>//localhost:1313/post/htb/machine/code/</link>
       <pubDate>Sat, 20 Dec 2025 18:17:29 +0900</pubDate>
-      <guid>http://localhost:1313/post/htb/machine/code/</guid>
+      <guid>//localhost:1313/post/htb/machine/code/</guid>
       <description>HackTheBox Machine CodeのWriteupです。</description>
     </item>
   </channel>

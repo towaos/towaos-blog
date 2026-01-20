@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blind on towaos blog</title>
-    <link>http://localhost:1313/tags/blind/</link>
+    <link>//localhost:1313/tags/blind/</link>
     <description>Recent content in Blind on towaos blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 08 Jan 2026 21:37:18 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/blind/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/blind/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BlindBasedSQLi - PortSwigger</title>
-      <link>http://localhost:1313/post/portswigger/sqlinjection/blind/</link>
+      <link>//localhost:1313/post/portswigger/sqlinjection/blind/</link>
       <pubDate>Thu, 08 Jan 2026 21:37:18 +0900</pubDate>
-      <guid>http://localhost:1313/post/portswigger/sqlinjection/blind/</guid>
+      <guid>//localhost:1313/post/portswigger/sqlinjection/blind/</guid>
       <description>PortSwiggerのSQLi-Blindについて</description>
     </item>
   </channel>

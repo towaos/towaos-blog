@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>XSS on towaos blog</title>
-    <link>http://localhost:1313/tags/xss/</link>
+    <link>//localhost:1313/tags/xss/</link>
     <description>Recent content in XSS on towaos blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 17 Jan 2026 22:26:08 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/xss/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/xss/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CrossSiteScripting(DOM) - PortSwigger</title>
-      <link>http://localhost:1313/post/portswigger/crosssitescripting/dom/</link>
+      <link>//localhost:1313/post/portswigger/cross-site-scripting/dom/</link>
       <pubDate>Sat, 17 Jan 2026 22:26:08 +0900</pubDate>
-      <guid>http://localhost:1313/post/portswigger/crosssitescripting/dom/</guid>
+      <guid>//localhost:1313/post/portswigger/cross-site-scripting/dom/</guid>
       <description>PortSwiggerのXSS-DOMについて</description>
     </item>
   </channel>

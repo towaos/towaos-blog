@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Command on towaos blog</title>
-    <link>http://localhost:1313/tags/command/</link>
+    <link>//localhost:1313/tags/command/</link>
     <description>Recent content in Command on towaos blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 22 Dec 2025 16:47:28 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/command/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/command/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker Commands</title>
-      <link>http://localhost:1313/post/docker/commands/</link>
+      <link>//localhost:1313/post/docker/commands/</link>
       <pubDate>Mon, 22 Dec 2025 16:47:28 +0900</pubDate>
-      <guid>http://localhost:1313/post/docker/commands/</guid>
+      <guid>//localhost:1313/post/docker/commands/</guid>
       <description>私がよく使うDockerコマンドです。</description>
     </item>
   </channel>

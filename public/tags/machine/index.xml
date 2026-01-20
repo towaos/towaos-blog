@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Machine on towaos blog</title>
-    <link>http://localhost:1313/tags/machine/</link>
+    <link>//localhost:1313/tags/machine/</link>
     <description>Recent content in Machine on towaos blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Jan 2026 15:32:10 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/machine/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/machine/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Conversor - HTB</title>
-      <link>http://localhost:1313/post/htb/machine/conversor/</link>
+      <link>//localhost:1313/post/htb/machine/conversor/</link>
       <pubDate>Mon, 19 Jan 2026 15:32:10 +0900</pubDate>
-      <guid>http://localhost:1313/post/htb/machine/conversor/</guid>
+      <guid>//localhost:1313/post/htb/machine/conversor/</guid>
       <description>HackTheBox Machine ConversorのWriteupです。</description>
     </item>
     <item>
       <title>Expressway - HTB</title>
-      <link>http://localhost:1313/post/htb/machine/expressway/</link>
+      <link>//localhost:1313/post/htb/machine/expressway/</link>
       <pubDate>Fri, 16 Jan 2026 22:17:39 +0900</pubDate>
-      <guid>http://localhost:1313/post/htb/machine/expressway/</guid>
+      <guid>//localhost:1313/post/htb/machine/expressway/</guid>
       <description>HackTheBox Machine ExpresswayのWriteupです。</description>
     </item>
     <item>
       <title>Code - HTB</title>
-      <link>http://localhost:1313/post/htb/machine/code/</link>
+      <link>//localhost:1313/post/htb/machine/code/</link>
       <pubDate>Sat, 20 Dec 2025 18:17:29 +0900</pubDate>
-      <guid>http://localhost:1313/post/htb/machine/code/</guid>
+      <guid>//localhost:1313/post/htb/machine/code/</guid>
       <description>HackTheBox Machine CodeのWriteupです。</description>
     </item>
   </channel>
