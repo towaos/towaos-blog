@@ -6,7 +6,7 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [pagination]
-pagerSize = 15
+pagerSize = 10
 path = "page"
 
 [params]
@@ -16,11 +16,17 @@ avatar = "/images/towaos_icon.png"
 github = "towaos"
 url = "https://blog.towaos.com"
 favicon = "/images/towaos.png"
-headerIcon = "images/towaos_icon.png"
+headerIcon = "/images/towaos_icon.png"
 userStatusEmoji = "😀"
 lastmod = true
 
 [markup]
   [markup.goldmark.renderer]
     unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    style = "github"
+    noClasses = false
+
 ignoreLogs = ['warning-goldmark-raw-html']

@@ -1,0 +1,88 @@
+
+/* 行番号 */
+.chroma .ln {
+  color: #6a737d;
+}
+
+/* キーワード */
+.chroma .k,
+.chroma .kd,
+.chroma .kn,
+.chroma .kp {
+  color: #d73a49;
+  /* font-weight: bold; */
+}
+
+/* 関数名 / 宣言 */
+.chroma .nf,
+.chroma .function {
+  color: #6f42c1;
+}
+
+/* クラス / 型 */
+.chroma .nc,
+.chroma .nt {
+  color: #005cc5;
+  /* font-weight: bold; */
+}
+
+/* 定数 / 数字 */
+.chroma .m,
+.chroma .mi,
+.chroma .mo,
+.chroma .mb {
+  color: #005cc5;
+}
+
+/* 文字列 */
+.chroma .s,
+.chroma .sb,
+.chroma .sc,
+.chroma .sd,
+.chroma .s1,
+.chroma .s2,
+.chroma .se,
+.chroma .sh {
+  color: #044691;
+}
+
+/* コメント */
+.chroma .c,
+.chroma .cm,
+.chroma .c1,
+.chroma .cs {
+  color: #6a737d;
+  font-style: italic;
+}
+
+/* 属性名 */
+.chroma .na {
+  color: #6f42c1;
+}
+
+/* タグ */
+.chroma .nt,
+.chroma .nv {
+  color: #22863a;
+}
+
+/* メソッド呼び出し */
+.chroma .m {
+  color: #2468b5;
+}
+
+/* 演算子 */
+.chroma .o {
+  color: #d73a49;
+}
+
+/* Punctuation */
+.chroma .p {
+  color: #4b5661;
+}
+
+/* URL, links */
+.chroma .uri {
+  color: #053f81;
+  text-decoration: underline;
+}
