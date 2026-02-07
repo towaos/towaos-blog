@@ -2,6 +2,7 @@
 title: 'Nice to meet you.'
 description: 'Nice to meet you.'
 pubDate: 2025-12-19
+category: 'Greetings'
 tags: ['NiceToMeetYou']
 ---
 

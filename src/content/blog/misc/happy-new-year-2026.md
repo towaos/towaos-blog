@@ -2,6 +2,7 @@
 title: 'Happy New Year - 2026🐴'
 description: 'Happy New Year'
 pubDate: 2026-01-01
+category: 'Greetings'
 tags: ['HappyNewYear']
 ---
 
