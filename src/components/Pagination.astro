@@ -6,7 +6,9 @@ interface Props extends PaginationProps {}
 const { currentPage, totalPages, baseUrl } = Astro.props;
 
 function getPageUrl(page: number): string {
-  return page === 1 ? baseUrl : `${baseUrl}/page/${page}`;
+  if (page === 1) return baseUrl;
+  if (baseUrl === "/") return `/page/${page}`;
+  return `${baseUrl}/page/${page}`;
 }
 ---
 

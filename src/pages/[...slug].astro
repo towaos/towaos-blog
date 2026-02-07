@@ -20,6 +20,10 @@ const { Content } = await post.render();
 
 <BlogLayout title={post.data.title} description={post.data.description || post.data.title}>
   <div class="topbar">
+    <!-- <div class="search" role="search">
+      <span aria-hidden="true">⌘</span>
+      <input type="search" placeholder="Search posts..." disabled />
+    </div> -->
     <div class="pillrow">
       <a href="/" class="pill">
         ← Back to list
