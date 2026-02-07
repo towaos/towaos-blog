@@ -12,7 +12,7 @@ export function getTotalPages(totalPosts: number): number {
   return Math.ceil(totalPosts / POSTS_PER_PAGE);
 }
 
-export function getPageUrl(page: number, baseUrl: string = '/blog'): string {
+export function getPageUrl(page: number, baseUrl: string = '/'): string {
   return page === 1 ? baseUrl : `${baseUrl}/page/${page}`;
 }
 

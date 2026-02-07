@@ -79,7 +79,7 @@ export function createGlobalSearchHandler(
             });
             
             return `
-            <a href="/blog/${post.slug}" class="item">
+            <a href="/${post.slug}" class="item">
               <div class="title">${post.title}</div>
               <div class="meta">
                 <span>${formattedDate}</span>

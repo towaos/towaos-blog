@@ -47,7 +47,7 @@ const currentPath = Astro.url.pathname;
   <div class="section">
     <div class="section-title">Views</div>
     <div class="nav">
-      <a href="/blog" class={currentPath === '/blog' || currentPath === '/blog/' ? 'active' : ''}>All Posts</a>
+      <a href="/" class={currentPath === '/' ? 'active' : ''}>All Posts</a>
       <a href="/categories" class={currentPath.startsWith('/categories') ? 'active' : ''}>Categories</a>
       <a href="/tags" class={currentPath.startsWith('/tags') ? 'active' : ''}>Tags</a>
     </div>

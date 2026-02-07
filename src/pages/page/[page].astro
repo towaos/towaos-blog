@@ -1,17 +1,17 @@
 ---
 import { getCollection } from 'astro:content';
-import BlogLayout from '../../../layouts/BlogLayout.astro';
-import SearchBar from '../../../components/SearchBar.astro';
-import PostList from '../../../components/PostList.astro';
-import Pagination from '../../../components/Pagination.astro';
-import SearchScript from '../../../components/SearchScript.astro';
-import { SITE_TITLE } from '../../../consts';
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import SearchBar from '../../components/SearchBar.astro';
+import PostList from '../../components/PostList.astro';
+import Pagination from '../../components/Pagination.astro';
+import SearchScript from '../../components/SearchScript.astro';
+import { SITE_TITLE } from '../../consts';
 import { 
   POSTS_PER_PAGE,
   getPaginatedPosts, 
   getTotalPages, 
   sortPostsByDate 
-} from '../../../lib/pagination';
+} from '../../lib/pagination';
 
 export async function getStaticPaths() {
   const allPosts = sortPostsByDate(await getCollection('blog'));
@@ -54,7 +54,7 @@ const { posts, currentPage, totalPages, totalPosts } = Astro.props;
   <Pagination 
     currentPage={currentPage}
     totalPages={totalPages}
-    baseUrl="/blog"
+    baseUrl="/"
   />
 
   <SearchScript />

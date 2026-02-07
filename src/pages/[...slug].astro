@@ -1,8 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
-import BlogLayout from '../../layouts/BlogLayout.astro';
-import FormattedDate from '../../components/FormattedDate.astro';
+import BlogLayout from '../layouts/BlogLayout.astro';
+import FormattedDate from '../components/FormattedDate.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -20,12 +20,8 @@ const { Content } = await post.render();
 
 <BlogLayout title={post.data.title} description={post.data.description || post.data.title}>
   <div class="topbar">
-    <!-- <div class="search" role="search">
-      <span aria-hidden="true">⌘</span>
-      <input type="search" placeholder="Search posts..." disabled />
-    </div> -->
     <div class="pillrow">
-      <a href="/blog" class="pill">
+      <a href="/" class="pill">
         ← Back to list
       </a>
     </div>
