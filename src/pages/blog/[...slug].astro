@@ -1,20 +1,167 @@
 ---
-import { type CollectionEntry, getCollection, render } from 'astro:content';
-import BlogPost from '../../layouts/BlogPost.astro';
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
 
 export async function getStaticPaths() {
-	const posts = await getCollection('blog');
-	return posts.map((post) => ({
-		params: { slug: post.id },
-		props: post,
-	}));
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
 }
+
 type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
-const { Content } = await render(post);
+const { Content } = await post.render();
 ---
 
-<BlogPost {...post.data}>
-	<Content />
-</BlogPost>
+<BlogLayout title={post.data.title} description={post.data.description || post.data.title}>
+  <div class="topbar">
+    <!-- <div class="search" role="search">
+      <span aria-hidden="true">⌘</span>
+      <input type="search" placeholder="Search posts..." disabled />
+    </div> -->
+    <div class="pillrow">
+      <a href="/blog" class="pill">
+        ← Back to list
+      </a>
+    </div>
+  </div>
+
+  <div class="layout">
+    <section class="panel listpanel" aria-label="Navigation">
+      <div class="panel-header">
+        <h2>Post</h2>
+      </div>
+      <div class="content" style="padding: 14px;">
+        <div style="font-size: 13px; color: var(--muted);">
+          現在閲覧中の記事
+        </div>
+        <div style="font-weight: 600; margin-top: 8px; font-size: 14px;">
+          {post.data.title}
+        </div>
+      </div>
+    </section>
+
+    <article class="panel" aria-label="Post detail">
+      <div class="content">
+        <h3>{post.data.title}</h3>
+        <div class="submeta">
+          <span><FormattedDate date={post.data.pubDate} /></span>
+          <span>•</span>
+          <a href={`/categories/${post.data.category.toLowerCase()}`} class="chip">
+            {post.data.category}
+          </a>
+          {post.data.tags.length > 0 && (
+            <>
+              <span>•</span>
+              {post.data.tags.map(tag => (
+                <a href={`/tags/${tag.toLowerCase()}`} class="chip">
+                  #{tag}
+                </a>
+              ))}
+            </>
+          )}
+        </div>
+        <div class="body">
+          <Content />
+        </div>
+      </div>
+    </article>
+  </div>
+</BlogLayout>
+
+<style>
+  .body :global(h1),
+  .body :global(h2),
+  .body :global(h3),
+  .body :global(h4) {
+    margin: 1.5em 0 0.5em 0;
+    color: var(--text);
+  }
+  
+  .body :global(p) {
+    margin: 1em 0;
+  }
+  
+  .body :global(ul),
+  .body :global(ol) {
+    margin: 1em 0;
+    padding-left: 2em;
+  }
+  
+  .body :global(li) {
+    margin: 0.5em 0;
+  }
+  
+  .body :global(img) {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5em 0;
+    display: block;
+  }
+  
+  .body :global(a) {
+    color: #569cd6;
+    text-decoration: underline;
+  }
+  
+  .body :global(a):hover {
+    color: #4488cc;
+  }
+  
+  .body :global(blockquote) {
+    margin: 1.5em 0;
+    padding-left: 1em;
+    border-left: 3px solid var(--line);
+    color: var(--muted);
+  }
+
+  /* シンタックスハイライト用のスタイル */
+  .body :global(pre) {
+    position: relative;
+    margin: 1.5em 0;
+  }
+
+  .body :global(pre code) {
+    display: block;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* VSCode Dark+ テーマカラー */
+  .body :global(.shiki) {
+    background: #1e1e1e !important;
+    color: #d4d4d4;
+    padding: 16px;
+    border-radius: 12px;
+    overflow-x: auto;
+    border: 1px solid var(--line);
+  }
+
+  [data-theme="light"] .body :global(.shiki) {
+    background: #f5f5f5 !important;
+    color: #333;
+  }
+
+  /* 行番号のスタイル */
+  .body :global(.line) {
+    display: inline-block;
+    min-width: 100%;
+  }
+
+  /* インラインコード */
+  .body :global(:not(pre) > code) {
+    font-family: var(--mono);
+    background: var(--chip);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 2px 6px;
+    font-size: 0.92em;
+    color: var(--text);
+  }
+</style>

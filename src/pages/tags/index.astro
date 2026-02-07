@@ -1,0 +1,107 @@
+---
+import { getCollection } from 'astro:content';
+import BlogLayout from '../../layouts/BlogLayout.astro';
+
+const allPosts = await getCollection('blog');
+const tags = new Map<string, number>();
+
+allPosts.forEach(post => {
+  post.data.tags.forEach(tag => {
+    tags.set(tag, (tags.get(tag) || 0) + 1);
+  });
+});
+
+const sortedTags = Array.from(tags.entries())
+  .sort((a, b) => b[1] - a[1]);
+---
+
+<BlogLayout title="Tags" description="全タグ">
+  <div class="topbar">
+    <h2 style="margin: 0; font-size: 20px;">Tags</h2>
+    <div class="pill">
+      Total: <strong>{tags.size}</strong>
+    </div>
+  </div>
+
+  <div class="card-grid">
+    {sortedTags.map(([tag, count]) => (
+      <a href={`/tags/${tag.toLowerCase()}`} class="card">
+        <h3 class="card-title">#{tag}</h3>
+        <div class="card-count">
+          <span class="count-number">{count}</span>
+          <span class="count-label">{count === 1 ? 'post' : 'posts'}</span>
+        </div>
+      </a>
+    ))}
+  </div>
+
+  <style>
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .card:hover {
+      background: var(--chip-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-title {
+      margin: 0;
+      color: var(--text);
+    }
+
+    .card-count {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+   .count-number {
+      width: 36px;
+      height: 36px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      background: var(--chip);
+      border: 1px solid var(--line);
+      border-radius: 50%;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .count-label {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .card-action {
+      font-size: 13px;
+      color: var(--muted);
+      font-family: var(--mono);
+    }
+
+    @media (max-width: 768px) {
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</BlogLayout>

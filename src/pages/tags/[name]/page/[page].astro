@@ -1,0 +1,79 @@
+---
+import { getCollection } from 'astro:content';
+import BlogLayout from '../../../../layouts/BlogLayout.astro';
+import SearchBar from '../../../../components/SearchBar.astro';
+import PostList from '../../../../components/PostList.astro';
+import Pagination from '../../../../components/Pagination.astro';
+import SearchScript from '../../../../components/SearchScript.astro';
+import { getPaginatedPosts, getTotalPages, sortPostsByDate } from '../../../../lib/pagination';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog');
+  const tagsMap = new Map<string, any[]>();
+  
+  // タグごとに投稿を分類
+  allPosts.forEach(post => {
+    post.data.tags.forEach(tag => {
+      if (!tagsMap.has(tag)) {
+        tagsMap.set(tag, []);
+      }
+      tagsMap.get(tag)!.push(post);
+    });
+  });
+
+  const paths: any[] = [];
+
+  // 各タグの2ページ目以降を生成
+  tagsMap.forEach((posts, tag) => {
+    const sortedPosts = sortPostsByDate(posts);
+    const totalPages = getTotalPages(sortedPosts.length);
+
+    for (let page = 2; page <= totalPages; page++) {
+      paths.push({
+        params: { 
+          name: tag.toLowerCase(),
+          page: String(page)
+        },
+        props: {
+          tag,
+          posts: getPaginatedPosts(sortedPosts, page),
+          currentPage: page,
+          totalPages,
+          totalPosts: sortedPosts.length,
+        },
+      });
+    }
+  });
+
+  return paths;
+}
+
+const { tag, posts, currentPage, totalPages, totalPosts } = Astro.props;
+---
+
+<BlogLayout title={`Tag: ${tag} - Page ${currentPage}`} description={`${tag}タグの投稿 - ページ ${currentPage}`}>
+  <SearchBar 
+    totalPosts={totalPosts}
+    tagName={tag}
+    currentPage={currentPage}
+    totalPages={totalPages}
+  />
+
+  <div class="layout">
+    <PostList posts={posts} title={`Posts tagged with "${tag}" (Page ${currentPage})`} />
+
+    <article class="panel" aria-label="Post detail">
+      <div class="content">
+        <div class="empty">投稿を選んでね。</div>
+      </div>
+    </article>
+  </div>
+
+  <Pagination 
+    currentPage={currentPage}
+    totalPages={totalPages}
+    baseUrl={`/tags/${tag.toLowerCase()}`}
+  />
+
+  <SearchScript />
+</BlogLayout>

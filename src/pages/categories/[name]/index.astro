@@ -1,0 +1,62 @@
+---
+import { getCollection } from 'astro:content';
+import BlogLayout from '../../../layouts/BlogLayout.astro';
+import SearchBar from '../../../components/SearchBar.astro';
+import PostList from '../../../components/PostList.astro';
+import Pagination from '../../../components/Pagination.astro';
+import SearchScript from '../../../components/SearchScript.astro';
+import { getPaginatedPosts, getTotalPages, sortPostsByDate } from '../../../lib/pagination';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog');
+  const categories = new Set(allPosts.map(post => post.data.category));
+  
+  return Array.from(categories).map(category => {
+    const categoryPosts = sortPostsByDate(
+      allPosts.filter(post => post.data.category === category)
+    );
+    const totalPages = getTotalPages(categoryPosts.length);
+
+    return {
+      params: { name: category.toLowerCase() },
+      props: { 
+        category,
+        posts: getPaginatedPosts(categoryPosts, 1),
+        allPosts: categoryPosts,
+        currentPage: 1,
+        totalPages,
+        totalPosts: categoryPosts.length,
+      },
+    };
+  });
+}
+
+const { category, posts, currentPage, totalPages, totalPosts } = Astro.props;
+---
+
+<BlogLayout title={`Category: ${category}`} description={`${category}カテゴリーの投稿`}>
+  <SearchBar 
+    totalPosts={totalPosts}
+    categoryName={category}
+    currentPage={currentPage}
+    totalPages={totalPages}
+  />
+
+  <div class="layout">
+    <PostList posts={posts} title={`Posts in "${category}"`} />
+
+    <article class="panel" aria-label="Post detail">
+      <div class="content">
+        <div class="empty">投稿を選んでね。</div>
+      </div>
+    </article>
+  </div>
+
+  <Pagination 
+    currentPage={currentPage}
+    totalPages={totalPages}
+    baseUrl={`/categories/${category.toLowerCase()}`}
+  />
+
+  <SearchScript />
+</BlogLayout>

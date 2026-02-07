@@ -1,0 +1,44 @@
+---
+import type { BlogPost } from '../types/blog';
+import FormattedDate from './FormattedDate.astro';
+
+interface Props {
+  posts: BlogPost[];
+  title?: string;
+}
+
+const { posts, title = 'Posts' } = Astro.props;
+---
+
+<section class="panel listpanel" aria-label="Post list">
+  <div class="panel-header">
+    <h2>{title}</h2>
+    <span id="postCount">{posts.length}</span>
+  </div>
+  <div class="list" id="postList">
+    {posts.map((post) => (
+      <a href={`/blog/${post.slug}`} class="item">
+        <div class="title">{post.data.title}</div>
+        <div class="meta">
+          <span><FormattedDate date={post.data.pubDate} /></span>
+          <span>•</span>
+          <span class="chip">{post.data.category}</span>
+          {post.data.tags.length > 0 && (
+            <>
+              <span>•</span>
+              {post.data.tags.slice(0, 1).map(tag => (
+                <span class="chip">#{tag}</span>
+              ))}
+              {post.data.tags.length > 2 && (
+                <span class="more-tags">...</span>
+              )}
+            </>
+          )}
+        </div>
+        {post.data.description && (
+          <div class="excerpt">{post.data.description}</div>
+        )}
+      </a>
+    ))}
+  </div>
+</section>

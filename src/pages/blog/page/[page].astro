@@ -1,0 +1,61 @@
+---
+import { getCollection } from 'astro:content';
+import BlogLayout from '../../../layouts/BlogLayout.astro';
+import SearchBar from '../../../components/SearchBar.astro';
+import PostList from '../../../components/PostList.astro';
+import Pagination from '../../../components/Pagination.astro';
+import SearchScript from '../../../components/SearchScript.astro';
+import { SITE_TITLE } from '../../../consts';
+import { 
+  POSTS_PER_PAGE,
+  getPaginatedPosts, 
+  getTotalPages, 
+  sortPostsByDate 
+} from '../../../lib/pagination';
+
+export async function getStaticPaths() {
+  const allPosts = sortPostsByDate(await getCollection('blog'));
+  const totalPages = getTotalPages(allPosts.length);
+
+  return Array.from({ length: totalPages - 1 }, (_, i) => {
+    const page = i + 2;
+    return {
+      params: { page: String(page) },
+      props: {
+        posts: getPaginatedPosts(allPosts, page),
+        currentPage: page,
+        totalPages,
+        totalPosts: allPosts.length,
+      },
+    };
+  });
+}
+
+const { posts, currentPage, totalPages, totalPosts } = Astro.props;
+---
+
+<BlogLayout title={`${SITE_TITLE} - Page ${currentPage}`} description={`ページ ${currentPage}`}>
+  <SearchBar 
+    totalPosts={totalPosts}
+    currentPage={currentPage}
+    totalPages={totalPages}
+  />
+
+  <div class="layout">
+    <PostList posts={posts} title={`Posts (Page ${currentPage})`} />
+
+    <article class="panel" aria-label="Post detail">
+      <div class="content">
+        <div class="empty">投稿を選んでね。</div>
+      </div>
+    </article>
+  </div>
+
+  <Pagination 
+    currentPage={currentPage}
+    totalPages={totalPages}
+    baseUrl="/blog"
+  />
+
+  <SearchScript />
+</BlogLayout>

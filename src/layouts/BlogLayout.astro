@@ -1,0 +1,79 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Sidebar from '../components/Sidebar.astro';
+import '../styles/global.css';
+import '../styles/components.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+  <body>
+    <button class="hamburger" id="hamburger" aria-label="メニュー">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="app">
+      <Sidebar />
+      <main class="main">
+        <slot />
+      </main>
+    </div>
+    <script>
+      // ダークモード切り替え
+      const themeToggle = document.getElementById('themeToggle');
+      const html = document.documentElement;
+
+      // 初期テーマを設定
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      html.setAttribute('data-theme', savedTheme);
+
+      themeToggle?.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const currentTheme = html.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        html.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+      });
+
+      // ハンバーガーメニュー
+      const hamburger = document.getElementById('hamburger');
+      const sidebar = document.querySelector('.sidebar');
+      const main = document.querySelector('.main');
+
+      hamburger?.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        sidebar?.classList.toggle('open');
+      });
+
+      // サイドバー外をクリックしたら閉じる
+      main?.addEventListener('click', () => {
+        if (sidebar?.classList.contains('open')) {
+          hamburger?.classList.remove('active');
+          sidebar?.classList.remove('open');
+        }
+      });
+
+      // サイドバー内のリンクをクリックしたら閉じる
+      sidebar?.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger?.classList.remove('active');
+          sidebar?.classList.remove('open');
+        });
+      });
+    </script>
+  </body>
+</html>

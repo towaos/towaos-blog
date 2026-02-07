@@ -1,0 +1,17 @@
+---
+// このコンポーネントはグローバル検索機能を初期化するスクリプトをインクルードします
+---
+
+<script>
+  import { createGlobalSearchHandler } from '../lib/search';
+  
+  // DOMが読み込まれた後に検索ハンドラーを初期化
+  document.addEventListener('DOMContentLoaded', () => {
+    createGlobalSearchHandler();
+  });
+  
+  // Astroのビュー遷移に対応
+  document.addEventListener('astro:page-load', () => {
+    createGlobalSearchHandler();
+  });
+</script>

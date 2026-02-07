@@ -1,0 +1,83 @@
+---
+import { getCollection } from 'astro:content';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+const allPosts = await getCollection('blog');
+
+// カテゴリーを集計
+const categories = new Map<string, number>();
+allPosts.forEach(post => {
+  const cat = post.data.category || 'Uncategorized';
+  categories.set(cat, (categories.get(cat) || 0) + 1);
+});
+const sortedCategories = Array.from(categories.entries())
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+
+// タグを集計
+const tags = new Map<string, number>();
+allPosts.forEach(post => {
+  (post.data.tags || []).forEach(tag => {
+    tags.set(tag, (tags.get(tag) || 0) + 1);
+  });
+});
+const sortedTags = Array.from(tags.entries())
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+
+const currentPath = Astro.url.pathname;
+---
+
+<aside class="sidebar">
+  <a href="/" class="brand" role="banner">
+    <div class="logo">😍</div>
+    <div>
+      <h1>{SITE_TITLE}</h1>
+      <p>{SITE_DESCRIPTION}</p>
+    </div>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+      <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.657 4.343L14.243 5.757M5.757 14.243L4.343 15.657M15.657 15.657L14.243 14.243M5.757 5.757L4.343 4.343" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </a>
+
+  <div class="section">
+    <div class="section-title">Views</div>
+    <div class="nav">
+      <a href="/blog" class={currentPath === '/blog' || currentPath === '/blog/' ? 'active' : ''}>All Posts</a>
+      <a href="/categories" class={currentPath.startsWith('/categories') ? 'active' : ''}>Categories</a>
+      <a href="/tags" class={currentPath.startsWith('/tags') ? 'active' : ''}>Tags</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Categories</div>
+    <div class="nav">
+      {sortedCategories.map(([name, count]) => (
+        <a 
+          href={`/categories/${name.toLowerCase()}`}
+          class={currentPath === `/categories/${name.toLowerCase()}` || currentPath === `/categories/${name.toLowerCase()}/` ? 'active' : ''}
+        >
+          {name} ({count})
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Tags</div>
+    <div class="nav">
+      {sortedTags.slice(0, 10).map(([name, count]) => (
+        <a 
+          href={`/tags/${name.toLowerCase()}`}
+          class={currentPath === `/tags/${name.toLowerCase()}` || currentPath === `/tags/${name.toLowerCase()}/` ? 'active' : ''}
+        >
+          {name} ({count})
+        </a>
+      ))}
+    </div>
+  </div>
+</aside>

@@ -1,0 +1,45 @@
+---
+import type { PaginationProps } from '../types/blog';
+
+interface Props extends PaginationProps {}
+
+const { currentPage, totalPages, baseUrl } = Astro.props;
+
+function getPageUrl(page: number): string {
+  return page === 1 ? baseUrl : `${baseUrl}/page/${page}`;
+}
+---
+
+{totalPages > 1 && (
+  <div class="pagination">
+    {currentPage > 1 && (
+      <a href={getPageUrl(currentPage - 1)} class="pagination-btn">
+        ← Previous
+      </a>
+    )}
+    
+    <div class="pagination-select-wrapper">
+      <select 
+        id="pageSelect" 
+        class="pagination-select"
+        onchange="window.location.href = this.value"
+      >
+        {Array.from({ length: totalPages }, (_, i) => {
+          const page = i + 1;
+          const url = getPageUrl(page);
+          return (
+            <option value={url} selected={page === currentPage}>
+              {page}
+            </option>
+          );
+        })}
+      </select>
+    </div>
+
+    {currentPage < totalPages && (
+      <a href={getPageUrl(currentPage + 1)} class="pagination-btn">
+        Next →
+      </a>
+    )}
+  </div>
+)}

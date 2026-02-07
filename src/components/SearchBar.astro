@@ -1,0 +1,38 @@
+---
+interface Props {
+  totalPosts: number;
+  currentPage?: number;
+  totalPages?: number;
+  categoryName?: string;
+  tagName?: string;
+}
+
+const { totalPosts, currentPage, totalPages, categoryName, tagName } = Astro.props;
+---
+
+<div class="topbar">
+  <div class="search" role="search">
+    <span aria-hidden="true">⌘</span>
+    <input id="searchInput" type="search" placeholder="Search posts (title, body, tags)..." />
+  </div>
+  <div class="pillrow">
+    {categoryName && (
+      <div class="pill">
+        Category: <strong>{categoryName}</strong>
+      </div>
+    )}
+    {tagName && (
+      <div class="pill">
+        Tag: <strong>{tagName}</strong>
+      </div>
+    )}
+    <div class="pill">
+      Posts: <strong>{totalPosts}</strong>
+    </div>
+    {currentPage && totalPages && (
+      <div class="pill">
+        Page: <strong>{currentPage}/{totalPages}</strong>
+      </div>
+    )}
+  </div>
+</div>
