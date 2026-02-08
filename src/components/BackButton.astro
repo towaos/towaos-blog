@@ -1,0 +1,49 @@
+---
+// サーバーサイドではデフォルト値を使用
+const defaultUrl = '/';
+const defaultLabel = 'All posts';
+---
+
+<div class="topbar">
+  <div class="pillrow">
+    <a href={defaultUrl} class="pill" id="backButton">
+      ← <span id="backLabel">{defaultLabel}</span>
+    </a>
+  </div>
+</div>
+
+<script>
+  // クライアントサイドで動的に戻り先を設定
+  (function() {
+    const STORAGE_KEY = 'blog_navigation_context';
+    const DEFAULT_URL = '/';
+    const DEFAULT_LABEL = 'All posts';
+    
+    const backButton = document.getElementById('backButton');
+    const backLabel = document.getElementById('backLabel');
+    
+    if (!backButton || !backLabel) return;
+    
+    try {
+      const stored = sessionStorage.getItem(STORAGE_KEY);
+      if (stored) {
+        const context = JSON.parse(stored);
+        
+        // 5分以内のコンテキストのみ有効
+        const isExpired = Date.now() - context.timestamp > 5 * 60 * 1000;
+        
+        if (!isExpired && context.from && context.label) {
+          backButton.setAttribute('href', context.from);
+          backLabel.textContent = context.label;
+          return;
+        }
+      }
+    } catch (error) {
+      console.error('Failed to get navigation context:', error);
+    }
+    
+    // デフォルト値を設定
+    backButton.setAttribute('href', DEFAULT_URL);
+    backLabel.textContent = DEFAULT_LABEL;
+  })();
+</script>

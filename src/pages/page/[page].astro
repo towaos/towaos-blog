@@ -5,6 +5,7 @@ import SearchBar from '../../components/SearchBar.astro';
 import PostList from '../../components/PostList.astro';
 import Pagination from '../../components/Pagination.astro';
 import SearchScript from '../../components/SearchScript.astro';
+import NavigationRecorder from '../../components/NavigationRecorder.astro';
 import { SITE_TITLE } from '../../consts';
 import { 
   POSTS_PER_PAGE,
@@ -32,9 +33,12 @@ export async function getStaticPaths() {
 }
 
 const { posts, currentPage, totalPages, totalPosts } = Astro.props;
+const pageLabel = `All posts (Page ${currentPage})`;
 ---
 
 <BlogLayout title={`${SITE_TITLE} - Page ${currentPage}`} description={`ページ ${currentPage}`}>
+  <NavigationRecorder label={pageLabel} />
+  
   <SearchBar 
     totalPosts={totalPosts}
     currentPage={currentPage}

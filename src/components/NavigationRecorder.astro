@@ -1,0 +1,26 @@
+---
+interface Props {
+  label: string;
+}
+
+const { label } = Astro.props;
+---
+
+<script define:vars={{ label }}>
+  // ページロード時にナビゲーションコンテキストを記録
+  (function() {
+    const STORAGE_KEY = 'blog_navigation_context';
+    
+    const context = {
+      from: window.location.pathname,
+      label: label,
+      timestamp: Date.now()
+    };
+    
+    try {
+      sessionStorage.setItem(STORAGE_KEY, JSON.stringify(context));
+    } catch (error) {
+      console.error('Failed to save navigation context:', error);
+    }
+  })();
+</script>

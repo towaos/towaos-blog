@@ -1,0 +1,103 @@
+---
+// このコンポーネントはクライアントサイドでTOCを生成し、スクロールスパイを実装
+---
+
+<section class="panel toc-panel" aria-label="Table of Contents">
+  <div class="panel-header">
+    <h2>目次</h2>
+  </div>
+  <nav class="toc-content" id="tocNav">
+    <div class="toc-loading">目次を読み込み中...</div>
+  </nav>
+</section>
+
+<script>
+  function initTableOfContents() {
+    const article = document.querySelector('article .body');
+    const tocNav = document.getElementById('tocNav');
+    
+    if (!article || !tocNav) return;
+
+    // 見出しを取得(h1, h2, h3, h4)
+    const headings = article.querySelectorAll('h1, h2, h3, h4');
+    
+    if (headings.length === 0) {
+      tocNav.innerHTML = '<div class="toc-empty">目次項目がありません</div>';
+      return;
+    }
+
+    // 各見出しにIDを付与(ない場合)
+    headings.forEach((heading, index) => {
+      if (!heading.id) {
+        heading.id = `heading-${index}`;
+      }
+    });
+
+    // TOCのHTMLを生成
+    const tocItems = Array.from(headings).map((heading, index) => {
+      const level = parseInt(heading.tagName.substring(1));
+      const text = heading.textContent || '';
+      const id = heading.id;
+      
+      return `
+        <a 
+          href="#${id}" 
+          class="toc-item toc-level-${level}" 
+          data-heading-id="${id}"
+        >
+          ${text}
+        </a>
+      `;
+    }).join('');
+
+    tocNav.innerHTML = tocItems;
+
+    // スクロールスパイの実装
+    const tocLinks = tocNav.querySelectorAll('.toc-item');
+    
+    const observerOptions = {
+      root: null,
+      rootMargin: '-80px 0px -80% 0px',
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const id = entry.target.id;
+        const tocLink = tocNav.querySelector(`[data-heading-id="${id}"]`);
+        
+        if (entry.isIntersecting) {
+          // 全てのアクティブクラスを削除
+          tocLinks.forEach(link => link.classList.remove('active'));
+          // 現在の見出しにアクティブクラスを追加
+          tocLink?.classList.add('active');
+        }
+      });
+    }, observerOptions);
+
+    // 各見出しを監視
+    headings.forEach(heading => observer.observe(heading));
+
+    // スムーススクロール
+    tocLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('data-heading-id');
+        const target = document.getElementById(targetId || '');
+        
+        if (target) {
+          const yOffset = -80;
+          const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      });
+    });
+  }
+
+  // DOMContentLoadedで初期化
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initTableOfContents);
+  } else {
+    initTableOfContents();
+  }
+</script>

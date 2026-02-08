@@ -5,6 +5,7 @@ import SearchBar from '../components/SearchBar.astro';
 import PostList from '../components/PostList.astro';
 import Pagination from '../components/Pagination.astro';
 import SearchScript from '../components/SearchScript.astro';
+import NavigationRecorder from '../components/NavigationRecorder.astro';
 import { SITE_TITLE } from '../consts';
 import { getPaginatedPosts, getTotalPages, sortPostsByDate } from '../lib/pagination';
 
@@ -15,6 +16,8 @@ const posts = getPaginatedPosts(allPosts, currentPage);
 ---
 
 <BlogLayout title={SITE_TITLE} description="全ての投稿">
+  <NavigationRecorder label="All posts" />
+  
   <SearchBar 
     totalPosts={allPosts.length}
     currentPage={currentPage}

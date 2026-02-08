@@ -15,30 +15,42 @@ const { posts, title = 'Posts' } = Astro.props;
     <h2>{title}</h2>
     <span id="postCount">{posts.length}</span>
   </div>
-  <div class="list" id="postList">
+  <div class="list post-list-container" id="postList">
     {posts.map((post) => (
-      <a href={`/${post.slug}`} class="item">
-        <div class="title">{post.data.title}</div>
-        <div class="meta">
-          <span><FormattedDate date={post.data.pubDate} /></span>
-          <span>•</span>
-          <span class="chip">{post.data.category}</span>
+      <a href={`/${post.slug}`} class="item post-item">
+        <div class="post-title">{post.data.title}</div>
+        {post.data.description && (
+          <div class="post-excerpt">{post.data.description}</div>
+        )}
+        <div class="post-date">
+          <FormattedDate date={post.data.pubDate} />
+        </div>
+      </a>
+        <div class="post-tags-row">
+          <a 
+            href={`/categories/${post.data.category.toLowerCase()}`} 
+            class="chip clickable-chip category-chip"
+            onclick="event.stopPropagation();"
+          >
+            {post.data.category}
+          </a>
           {post.data.tags.length > 0 && (
             <>
-              <span>•</span>
-              {post.data.tags.slice(0, 1).map(tag => (
-                <span class="chip">#{tag}</span>
+              {post.data.tags.slice(0, 3).map(tag => (
+                <a 
+                  href={`/tags/${tag.toLowerCase()}`} 
+                  class="chip clickable-chip tag-chip"
+                  onclick="event.stopPropagation();"
+                >
+                  #{tag}
+                </a>
               ))}
-              {post.data.tags.length > 2 && (
-                <span class="more-tags">...</span>
+              {post.data.tags.length > 3 && (
+                <span class="more-tags">+{post.data.tags.length - 3}</span>
               )}
             </>
           )}
         </div>
-        {post.data.description && (
-          <div class="excerpt">{post.data.description}</div>
-        )}
-      </a>
     ))}
   </div>
 </section>

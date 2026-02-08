@@ -5,6 +5,7 @@ import SearchBar from '../../../../components/SearchBar.astro';
 import PostList from '../../../../components/PostList.astro';
 import Pagination from '../../../../components/Pagination.astro';
 import SearchScript from '../../../../components/SearchScript.astro';
+import NavigationRecorder from '../../../../components/NavigationRecorder.astro';
 import { getPaginatedPosts, getTotalPages, sortPostsByDate } from '../../../../lib/pagination';
 
 export async function getStaticPaths() {
@@ -48,9 +49,12 @@ export async function getStaticPaths() {
 }
 
 const { category, posts, currentPage, totalPages, totalPosts } = Astro.props;
+const pageLabel = `Category: ${category} (Page ${currentPage})`;
 ---
 
 <BlogLayout title={`Category: ${category} - Page ${currentPage}`} description={`${category}カテゴリーの投稿 - ページ ${currentPage}`}>
+  <NavigationRecorder label={pageLabel} />
+  
   <SearchBar 
     totalPosts={totalPosts}
     categoryName={category}

@@ -1,6 +1,6 @@
 import type { BlogPost } from '../types/blog';
 
-export const POSTS_PER_PAGE = 7;
+export const POSTS_PER_PAGE = 10;
 
 export function getPaginatedPosts(posts: BlogPost[], page: number) {
   const start = (page - 1) * POSTS_PER_PAGE;
