@@ -1,12 +1,12 @@
 ---
-title: 'WebGauntlet3 - picoCTF'
-description: 'Web Gauntlet3のWriteupです。'
+title: 'Web Gauntlet 3'
+description: 'picoCTFのWriteupです。'
 pubDate: 2025-12-30
 category: 'CTF'
-tags: ['picoCTF', 'Writeup', 'Web', 'SQLi', 'SQLite']
+tags: ['picoCTF', 'Writeup', 'Web', 'SQL injection', 'SQLite']
 ---
 
-# WebGauntlet3 - picoCTF
+# Web Gauntlet 3 - picoCTF
 
 ## 初期調査
 

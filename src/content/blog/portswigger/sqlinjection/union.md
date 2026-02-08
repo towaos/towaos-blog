@@ -1,12 +1,12 @@
 ---
-title: 'UnionBasedSQLi - PortSwigger'
-description: 'PortSwiggerのSQLi-Unionについて'
+title: 'SQL injection Union attack'
+description: 'PortSwiggerの記録'
 pubDate: 2026-01-08
 category: 'PortSwigger'
-tags: ['PortSwigger', 'Writeup', 'Web', 'SQLi', 'Union']
+tags: ['PortSwigger', 'Writeup', 'Web', 'SQL injection', 'Union']
 ---
 
-# UnionBasedSQLi - PortSwigger
+# SQL injection Union attack - PortSwigger
 
 ## ペイロード一覧 (Lab内で使用したもの)
 - MySQL(My), PostgreSQL(Po), SQLite(Sq), Oracle(Or), MSSQL(Ms), All

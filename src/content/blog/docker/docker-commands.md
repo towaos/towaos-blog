@@ -1,9 +1,9 @@
 ---
 title: 'Docker Commands'
-description: '私がよく使うDockerコマンドです。'
+description: 'よく使うDockerコマンド。'
 pubDate: 2025-12-22
 category: 'Docker'
-tags: ['Docker', 'Command']
+tags: ['Docker']
 ---
 
 # Docker Commands

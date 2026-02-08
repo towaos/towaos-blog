@@ -1,12 +1,12 @@
 ---
-title: 'SuperSerial - picoCTF'
-description: 'Super SerialのWriteupです。'
+title: 'Super Serial'
+description: 'picoCTFのWriteupです。'
 pubDate: 2025-12-24
 category: 'CTF'
 tags: ['picoCTF', 'Writeup', 'Web', 'PHP Object']
 ---
 
-# SuperSerial - picoCTF
+# Super Serial - picoCTF
 
 ## 初期調査
 

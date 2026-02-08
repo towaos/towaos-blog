@@ -1,9 +1,9 @@
 ---
-title: 'Happy New Year - 2026🐴'
+title: 'Happy New Year 2026🐴'
 description: 'Happy New Year'
 pubDate: 2026-01-01
 category: 'Greetings'
-tags: ['HappyNewYear']
+tags: ['Greetings']
 ---
 
 # Happy New Year - 2026🐴

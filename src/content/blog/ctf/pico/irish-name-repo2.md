@@ -1,12 +1,12 @@
 ---
-title: 'IrishNameRepo2 - picoCTF'
-description: 'Irish Name Repo2のWriteupです。'
+title: 'Irish-Name-Repo 2'
+description: 'picoCTFのWriteupです。'
 pubDate: 2026-01-05
 category: 'CTF'
-tags: ['picoCTF', 'Writeup', 'Web', 'SQLi']
+tags: ['picoCTF', 'Writeup', 'Web', 'SQL injection']
 ---
 
-# IrishNameRepo2 - picoCTF
+# Irish-Name-Repo 2 - picoCTF
 
 ```bash
 user: admin ' --

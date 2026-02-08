@@ -1,12 +1,12 @@
 ---
-title: 'SWEInternAtGirlyPopInc - ScarletCTF'
-description: 'SWE intern at girly pop incのWriteupです。'
+title: 'SWE intern at girly pop inc'
+description: 'ScarletCTFのWriteupです。'
 pubDate: 2026-01-12
 category: 'CTF'
 tags: ['ScarletCTF', 'Writeup', 'Web', 'Git', 'DirTraversal']
 ---
 
-# SWEInternAtGirlyPopInc - ScarletCTF
+# SWE intern at girly pop inc - ScarletCTF
 
 ## 初期調査
 ディレクトリトラバーサルがありそう

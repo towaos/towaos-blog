@@ -1,12 +1,12 @@
 ---
-title: 'CrackTheGate2 - picoCTF'
-description: 'Crack The Gate2のWriteupです。'
+title: 'Crack the Gate 2'
+description: 'picoCTFのWriteupです。'
 pubDate: 2025-12-21
 category: 'CTF'
 tags: ['picoCTF', 'Writeup', 'Web']
 ---
 
-# CrackTheGate2 - picoCTF
+# Crack the Gate 2 - picoCTF
 
 ## Initial observation
 

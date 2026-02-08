@@ -1,9 +1,9 @@
 ---
-title: 'Fly.io - ServerSetup'
+title: 'Fly.io server setup'
 description: 'Fly.ioを使ってみました。'
 pubDate: 2025-12-28
-category: 'Setup'
-tags: ['Fly.io', 'Setup']
+category: 'Fly.io'
+tags: ['Fly.io']
 ---
 
 # Fly.io - ServerSetup

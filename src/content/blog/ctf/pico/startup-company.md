@@ -1,12 +1,12 @@
 ---
-title: 'StartupCompany - picoCTF'
-description: 'Start Up CompanyのWriteupです。'
+title: 'Startup Company'
+description: 'picoCTFのWriteupです。'
 pubDate: 2026-01-04
 category: 'CTF'
-tags: ['picoCTF', 'Writeup', 'Web', 'SQLi', 'SQLite']
+tags: ['picoCTF', 'Writeup', 'Web', 'SQL injection', 'SQLite']
 ---
 
-# StartupCompany - picoCTF
+# Startup Company - picoCTF
 
 ## 初期調査
 

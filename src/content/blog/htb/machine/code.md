@@ -1,12 +1,12 @@
 ---
-title: 'Code - HTB'
-description: 'HackTheBox Machine CodeのWriteupです。'
+title: 'Code'
+description: 'HackTheBox MachineのWriteupです。'
 pubDate: 2025-12-20
 category: 'HTB'
 tags: ['HTB', 'Machine', 'Writeup', 'Linux', 'Web']
 ---
 
-# Code - HTB
+# Code - HackTheBox
 
 ## Machine Information
 | Title | Data |

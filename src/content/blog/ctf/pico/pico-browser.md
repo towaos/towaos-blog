@@ -1,12 +1,12 @@
 ---
-title: 'Picobrowser - picoCTF'
-description: 'Pico BrowserのWriteupです。'
+title: 'picobrowser'
+description: 'picoCTFのWriteupです。'
 pubDate: 2026-01-05
 category: 'CTF'
 tags: ['picoCTF', 'Writeup', 'Web', 'UserAgent']
 ---
 
-# Picobrowser - picoCTF
+# picobrowser - picoCTF
 
 ## 初期調査
 User-Agent が表示されているので User-Agent を `picobrowser` にするだけだと思う。

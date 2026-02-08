@@ -1,12 +1,12 @@
 ---
-title: 'CrossSiteScripting(DOM) - PortSwigger'
-description: 'PortSwiggerのXSS-DOMについて'
+title: 'Cross-site scripting < DOM >'
+description: 'PortSwiggerのXSS記録'
 pubDate: 2026-01-17
 category: 'PortSwigger'
 tags: ['PortSwigger', 'Writeup', 'Web', 'XSS', 'DOM']
 ---
 
-# CrossSiteScripting(DOM) - PortSwigger
+# Cross-site scripting < DOM > - PortSwigger
 
 ## Note
 - document

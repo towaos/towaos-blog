@@ -1,12 +1,14 @@
 ---
-title: '越境パス - 防衛省サイバーコンテスト2026'
+title: '越境パス'
 description: '防衛省サイバーコンテスト2026のWriteupです。'
 pubDate: 2026-02-02
 category: 'CTF'
-tags: ['MODCC', 'Writeup', 'Web', 'injection']
+tags: ['防衛省サイバーコンテスト', 'Writeup', 'Web', 'injection']
 ---
 
-# 越境パス
+# 越境パス - 防衛省サイバーコンテスト
+
+## Web調査
 > `../` -> `%2e%2e%2f`  
 URLエンコードして実行するとフィルターを回避できる
 

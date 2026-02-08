@@ -1,12 +1,12 @@
 ---
 title: 'Nice to meet you.'
-description: 'Nice to meet you.'
+description: 'はじめまして'
 pubDate: 2025-12-19
 category: 'Greetings'
-tags: ['NiceToMeetYou']
+tags: ['Greetings']
 ---
 
-はじめまして。towaosです。
+はじめまして。towa.です。
 
 このブログは、日々の学習内容やCTFの記録を残すために始めました。
 主にセキュリティ関連の技術メモやWriteupを書いていく予定です。

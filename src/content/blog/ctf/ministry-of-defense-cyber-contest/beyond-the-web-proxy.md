@@ -1,12 +1,14 @@
 ---
-title: 'WebProxyの向こう側 - 防衛省サイバーコンテスト2026'
+title: 'WebProxyの向こう側'
 description: '防衛省サイバーコンテスト2026のWriteupです。'
 pubDate: 2026-02-02
 category: 'CTF'
-tags: ['MODCC', 'Writeup', 'Web', 'Bypass']
+tags: ['防衛省サイバーコンテスト', 'Writeup', 'Web', 'Bypass']
 ---
 
-# WebProxyの向こう側
+# WebProxyの向こう側 - 防衛省サイバーコンテスト
+
+## Web調査
 > サーバー側で 127.0.0.1 や localhost が制限されている可能性を考慮し、IPアドレスとして解釈される別表現を調査した。
 
 - http://2130706433:8081

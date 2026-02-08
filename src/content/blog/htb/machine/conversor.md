@@ -1,12 +1,12 @@
 ---
-title: 'Conversor - HTB'
-description: 'HackTheBox Machine ConversorのWriteupです。'
+title: 'Conversor'
+description: 'HackTheBox MachineのWriteupです。'
 pubDate: 2026-01-19
 category: 'HTB'
 tags: ['HTB', 'Machine', 'Writeup', 'Linux', 'XML', 'XSLT', 'Needrestart', 'CVE-2024-48990']
 ---
 
-# Conversor - HTB
+# Conversor - HackTheBox
 ## Foothold
 ### Port Scanning and Service Enumeration
 ```bash

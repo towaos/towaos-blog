@@ -1,6 +1,6 @@
 ---
-title: 'JAuth - picoCTF'
-description: 'JAuthのWriteupです。'
+title: 'JAuth'
+description: 'picoCTFのWriteupです。'
 pubDate: 2025-12-23
 category: 'CTF'
 tags: ['picoCTF', 'Writeup', 'Web', 'JWT']

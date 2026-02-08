@@ -1,12 +1,12 @@
 ---
-title: 'ItIsMyBirthday - picoCTF'
-description: 'It Is My BirthdayのWriteupです。'
+title: 'It is my Birthday'
+description: 'picoCTFのWriteupです。'
 pubDate: 2026-01-01
 category: 'CTF'
 tags: ['picoCTF', 'Writeup', 'Web', 'MD5']
 ---
 
-# ItIsMyBirthday - picoCTF
+# It is my Birthday - picoCTF
 
 ## 初期調査
 

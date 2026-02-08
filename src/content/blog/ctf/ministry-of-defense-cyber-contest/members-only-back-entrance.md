@@ -1,12 +1,14 @@
 ---
-title: '会員限定の裏口 - 防衛省サイバーコンテスト2026'
+title: '会員限定の裏口'
 description: '防衛省サイバーコンテスト2026のWriteupです。'
 pubDate: 2026-02-02
 category: 'CTF'
-tags: ['MODCC', 'Writeup', 'Web', 'injection']
+tags: ['防衛省サイバーコンテスト', 'Writeup', 'Web', 'injection']
 ---
 
-# 会員限定の裏口
+# 会員限定の裏口 - 防衛省サイバーコンテスト
+
+## Web調査
 > ログイン画面にSQLiはなく、ログイン後の検索画面にSQLiが存在しそこを調査していく
 
 > カラム数列挙、8以降はエラー  

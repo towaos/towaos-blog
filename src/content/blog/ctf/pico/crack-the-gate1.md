@@ -1,12 +1,12 @@
 ---
-title: 'CrackTheGate1 - picoCTF'
-description: 'Crack The Gate1のWriteupです。'
+title: 'Crack the Gate 1'
+description: 'picoCTFのWriteupです。'
 pubDate: 2025-12-20
 category: 'CTF'
-tags: ['picoCTF', 'Writeup', 'Web', 'CaesarCipher']
+tags: ['picoCTF', 'Writeup', 'Web', 'Caesar Cipher']
 ---
 
-# CrackTheGate1 - picoCTF
+# Crack the Gate 1 - picoCTF
 
 ## Initial Observation
 ログイン画面があり、ログインするとflagが取れそう!\

@@ -1,12 +1,12 @@
 ---
-title: 'Expressway - HTB'
-description: 'HackTheBox Machine ExpresswayのWriteupです。'
+title: 'Expressway'
+description: 'HackTheBox MachineのWriteupです。'
 pubDate: 2026-01-16
 category: 'HTB'
 tags: ['HTB', 'Machine', 'Writeup', 'Linux', 'IKE', 'PSK', 'sudo', 'CVE-2025-32463']
 ---
 
-# Expressway - HTB
+# Expressway - HackTheBox
 
 ## Enumeration
 ```bash

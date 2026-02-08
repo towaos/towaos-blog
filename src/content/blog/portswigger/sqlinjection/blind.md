@@ -1,12 +1,12 @@
 ---
-title: 'BlindBasedSQLi - PortSwigger'
-description: 'PortSwiggerのSQLi-Blindについて'
+title: 'Blind SQL injection'
+description: 'PortSwiggerの記録'
 pubDate: 2026-01-08
 category: 'PortSwigger'
-tags: ['PortSwigger', 'Writeup', 'Web', 'SQLi', 'Blind']
+tags: ['PortSwigger', 'Writeup', 'Web', 'SQL injection', 'Blind']
 ---
 
-# BlindBasedSQLi - PortSwigger
+# Blind SQL injection - PortSwigger
 
 ## ペイロード一覧 (Lab内で使用したもの)
 ### Responses

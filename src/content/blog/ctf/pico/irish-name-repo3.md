@@ -1,12 +1,12 @@
 ---
-title: 'IrishNameRepo3 - picoCTF'
-description: 'Irish Name Repo3のWriteupです。'
+title: 'Irish-Name-Repo 3'
+description: 'picoCTFのWriteupです。'
 pubDate: 2026-01-05
 category: 'CTF'
-tags: ['picoCTF', 'Writeup', 'Web', 'SQLi', 'SQLite', 'CaesarCipher']
+tags: ['picoCTF', 'Writeup', 'Web', 'SQL injection', 'SQLite', 'Caesar Cipher']
 ---
 
-# IrishNameRepo3 - picoCTF
+# Irish-Name-Repo 3 - picoCTF
 
 ## 初期調査
 
