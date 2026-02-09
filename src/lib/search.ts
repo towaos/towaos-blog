@@ -42,7 +42,7 @@ export function createGlobalSearchHandler(
   if (!searchInput || !postList) return;
 
   const originalItems = postList.innerHTML;
-  const originalCount = postList.querySelectorAll('.item').length;
+  const originalCount = postList.querySelectorAll('.post-item-wrapper').length;
 
   let debounceTimeout: number;
 
@@ -81,17 +81,20 @@ export function createGlobalSearchHandler(
             });
             
             return `
-            <a href="/${post.slug}" class="item post-item">
-              <div class="post-title">${post.title}</div>
-              ${post.description ? `<div class="post-excerpt">${post.description}</div>` : ''}
-              <div class="post-date">${formattedDate}</div>
-              <div class="post-divider"></div>
-              <div class="post-tags-row">
-                <span class="chip category-chip">${post.category}</span>
-                ${post.tags.slice(0, 3).map(tag => `<span class="chip tag-chip">#${tag}</span>`).join('')}
-                ${post.tags.length > 3 ? `<span class="more-tags">+${post.tags.length - 3}</span>` : ''}
+            <div class="post-item-wrapper">
+              <a href="/${post.slug}" class="item post-item">
+                <div class="post-title">${post.title}</div>
+                ${post.description ? `<div class="post-excerpt">${post.description}</div>` : ''}
+                <div class="post-date">${formattedDate}</div>
+              </a>
+              <div class="post-tags-row" role="list">
+                <a href="/categories/${post.category.toLowerCase()}" class="chip clickable-chip category-chip" role="listitem">${post.category}</a>
+                ${post.tags.slice(0, 3).map(tag => 
+                  `<a href="/tags/${tag.toLowerCase()}" class="chip clickable-chip tag-chip" role="listitem">#${tag}</a>`
+                ).join('')}
+                ${post.tags.length > 3 ? `<span class="more-tags" role="listitem">+${post.tags.length - 3}</span>` : ''}
               </div>
-            </a>
+            </div>
           `}).join('');
           
           if (postCount) {

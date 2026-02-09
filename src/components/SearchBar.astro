@@ -13,7 +13,15 @@ const { totalPosts, currentPage, totalPages, categoryName, tagName } = Astro.pro
 <div class="topbar">
   <div class="search" role="search">
     <span aria-hidden="true">⌘</span>
-    <input id="searchInput" type="search" placeholder="Search posts (title, body, tags)..." />
+    <input 
+      id="searchInput" 
+      type="search" 
+      placeholder="Search posts (title, body, tags)..."
+      autocomplete="off"
+      autocorrect="off"
+      autocapitalize="off"
+      spellcheck="false"
+    />
   </div>
   <div class="pillrow">
     {categoryName && (

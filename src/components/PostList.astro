@@ -17,20 +17,21 @@ const { posts, title = 'Posts' } = Astro.props;
   </div>
   <div class="list post-list-container" id="postList">
     {posts.map((post) => (
-      <a href={`/${post.slug}`} class="item post-item">
-        <div class="post-title">{post.data.title}</div>
-        {post.data.description && (
-          <div class="post-excerpt">{post.data.description}</div>
-        )}
-        <div class="post-date">
-          <FormattedDate date={post.data.pubDate} />
-        </div>
-      </a>
-        <div class="post-tags-row">
+      <div class="post-item-wrapper">
+        <a href={`/${post.slug}`} class="item post-item">
+          <div class="post-title">{post.data.title}</div>
+          {post.data.description && (
+            <div class="post-excerpt">{post.data.description}</div>
+          )}
+          <div class="post-date">
+            <FormattedDate date={post.data.pubDate} />
+          </div>
+        </a>
+        <div class="post-tags-row" role="list">
           <a 
             href={`/categories/${post.data.category.toLowerCase()}`} 
             class="chip clickable-chip category-chip"
-            onclick="event.stopPropagation();"
+            role="listitem"
           >
             {post.data.category}
           </a>
@@ -40,17 +41,18 @@ const { posts, title = 'Posts' } = Astro.props;
                 <a 
                   href={`/tags/${tag.toLowerCase()}`} 
                   class="chip clickable-chip tag-chip"
-                  onclick="event.stopPropagation();"
+                  role="listitem"
                 >
                   #{tag}
                 </a>
               ))}
               {post.data.tags.length > 3 && (
-                <span class="more-tags">+{post.data.tags.length - 3}</span>
+                <span class="more-tags" role="listitem">+{post.data.tags.length - 3}</span>
               )}
             </>
           )}
         </div>
+      </div>
     ))}
   </div>
 </section>

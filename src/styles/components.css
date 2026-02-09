@@ -17,16 +17,29 @@
   color: var(--text);
   cursor: pointer;
   transition: all 0.2s;
-  min-width: 100px;
+  /* min-width: 100px; */
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
-.pagination-btn:hover {
+.pagination-btn:hover:not(.pagination-btn-disabled) {
   background: var(--chip-hover);
   border-color: var(--accent);
+}
+
+/* Disabled状態のスタイル */
+.pagination-btn-disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.pagination-btn-disabled:hover {
+  background: var(--panel);
+  border-color: var(--line);
 }
 
 .pagination-select-wrapper {
@@ -49,7 +62,7 @@
   background-position: right 0.5rem center;
   background-size: 12px;
   height: 40px;
-  min-width: 60px;
+  /* min-width: 60px; */
 }
 
 .pagination-select:hover {
@@ -71,6 +84,7 @@
   max-width: 100%;
 }
 
+/* スマホ対応 */
 @media (max-width: 980px) {
   .pagination {
     flex-wrap: wrap;
@@ -80,12 +94,16 @@
   .pagination-btn {
     font-size: 12px;
     padding: 6px 12px;
-    min-width: 80px;
     height: 36px;
+  }
+
+  .pagination-btn-disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
   }
 
   .pagination-select {
     height: 36px;
-    min-width: 50px;
   }
 }

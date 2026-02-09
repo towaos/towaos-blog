@@ -1,46 +1,78 @@
 ---
 import type { PaginationProps } from '../types/blog';
+import { PaginationUseCase } from '../lib/pagination/useCase.js';
 
 interface Props extends PaginationProps {}
 
 const { currentPage, totalPages, baseUrl } = Astro.props;
 
+// ViewModelを生成
+const viewModel = PaginationUseCase.createViewModel(currentPage, totalPages);
+
+// URL生成関数
 function getPageUrl(page: number): string {
-  if (page === 1) return baseUrl;
-  if (baseUrl === "/") return `/page/${page}`;
-  return `${baseUrl}/page/${page}`;
+  return PaginationUseCase.generatePageUrl(page, baseUrl);
 }
 ---
 
 {totalPages > 1 && (
   <div class="pagination">
-    {currentPage > 1 && (
-      <a href={getPageUrl(currentPage - 1)} class="pagination-btn">
-        ← Previous
+    <!-- 前へボタン: 常に表示、1ページ目はdisabled -->
+    {viewModel.previousButton.isDisabled ? (
+      <button 
+        class="pagination-btn pagination-btn-disabled" 
+        disabled
+        aria-label={viewModel.previousButton.ariaLabel}
+        aria-disabled="true"
+      >
+        ←
+      </button>
+    ) : (
+      <a 
+        href={getPageUrl(viewModel.previousButton.targetPage!)} 
+        class="pagination-btn"
+        aria-label={viewModel.previousButton.ariaLabel}
+      >
+        ←
       </a>
     )}
     
+    <!-- ページ選択セレクトボックス -->
     <div class="pagination-select-wrapper">
       <select 
         id="pageSelect" 
         class="pagination-select"
         onchange="window.location.href = this.value"
+        aria-label="ページを選択"
       >
-        {Array.from({ length: totalPages }, (_, i) => {
-          const page = i + 1;
-          const url = getPageUrl(page);
-          return (
-            <option value={url} selected={page === currentPage}>
-              {page}
-            </option>
-          );
-        })}
+        {viewModel.pages.map((page) => (
+          <option 
+            value={getPageUrl(page.number)} 
+            selected={page.isCurrent}
+          >
+            {page.number}
+          </option>
+        ))}
       </select>
     </div>
 
-    {currentPage < totalPages && (
-      <a href={getPageUrl(currentPage + 1)} class="pagination-btn">
-        Next →
+    <!-- 次へボタン: 常に表示、最終ページはdisabled -->
+    {viewModel.nextButton.isDisabled ? (
+      <button 
+        class="pagination-btn pagination-btn-disabled" 
+        disabled
+        aria-label={viewModel.nextButton.ariaLabel}
+        aria-disabled="true"
+      >
+        →
+      </button>
+    ) : (
+      <a 
+        href={getPageUrl(viewModel.nextButton.targetPage!)} 
+        class="pagination-btn"
+        aria-label={viewModel.nextButton.ariaLabel}
+      >
+        →
       </a>
     )}
   </div>

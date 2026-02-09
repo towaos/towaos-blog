@@ -31,20 +31,35 @@
   box-sizing: border-box;
 }
 
+html {
+  /* iOS Safari でのフォントサイズ自動調整を無効化 */
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 body {
   margin: 0;
   font-family: var(--font);
   color: var(--text);
   background: var(--bg);
+  /* iOS Safari でのタップハイライトを最適化 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  /* タッチデバイスでのハイライト最適化 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
 }
 
 button {
   font-family: inherit;
+  /* タッチデバイスでのハイライト最適化 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+  touch-action: manipulation;
 }
 
 .app {
@@ -85,11 +100,22 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* スマホでの表示を保証 */
+  min-width: 32px;
+  min-height: 32px;
 }
 
 .theme-toggle:hover {
   background: var(--chip);
   color: var(--text);
+}
+
+.theme-toggle svg {
+  /* SVGの表示を保証 */
+  width: 20px;
+  height: 20px;
+  display: block;
+  flex-shrink: 0;
 }
 
 .theme-toggle .sun-icon {
@@ -161,11 +187,19 @@ button {
   color: var(--text);
   cursor: pointer;
   display: block;
+  transition: all 0.15s ease;
+  /* タッチ対応 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.05);
 }
 
 .nav a:hover,
 .nav button:hover {
   background: rgba(17, 24, 39, 0.04);
+}
+
+.nav a:active,
+.nav button:active {
+  transform: scale(0.98);
 }
 
 .nav a.active,
@@ -184,14 +218,34 @@ button {
 
 .topbar {
   display: flex;
+  flex-direction: column;
   gap: 12px;
-  align-items: center;
-  justify-content: space-between;
   margin-bottom: 18px;
 }
 
+/* デスクトップでは横並びに */
+@media (min-width: 768px) {
+  .topbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .search {
+    flex: 0 1 640px;
+    max-width: 640px;
+    min-width: 300px;
+  }
+
+  .pillrow {
+    justify-content: flex-end;
+    width: auto;
+    flex-shrink: 0;
+  }
+}
+
 .search {
-  flex: 1;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -199,21 +253,33 @@ button {
   background: var(--panel);
   border-radius: 12px;
   padding: 10px 12px;
-  max-width: 640px;
+  width: 100%;
 }
 
 .search span[aria-hidden] {
   color: var(--muted);
   font-size: 14px;
+  flex-shrink: 0;
 }
 
 .search input {
   border: none;
   outline: none;
   width: 100%;
+  min-width: 0;
   font-size: 14px;
   background: transparent;
   color: var(--text);
+  /* iOS対応 */
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* スマホでは16px以上にしてiOSの自動ズームを防ぐ */
+@media (max-width: 768px) {
+  .search input {
+    font-size: 16px;
+  }
 }
 
 .search input::placeholder {
@@ -292,37 +358,50 @@ button {
 
 /* PostList専用のスタイル */
 .post-list-container {
-  min-height: 400px;
+  min-height: auto;
   max-height: calc(100vh - 200px);
   overflow-y: auto;
 }
 
-.item {
-  padding: 16px;
-  border-top: 1px solid var(--line);
-  cursor: pointer;
+/* 投稿アイテム全体のラッパー */
+.post-item-wrapper {
+  /* border-top: 1px solid var(--line); */
   background: var(--panel);
   transition: background 0.15s ease;
 }
 
-.item:hover {
+.post-item-wrapper:hover {
   background: var(--chip-hover);
 }
 
-.item.active {
-  background: var(--chip);
-}
-
-.item:last-child {
+.post-item-wrapper:last-child {
   border-bottom: none;
 }
+
+.item {
+  padding: 16px;
+  cursor: pointer;
+  background: transparent;
+  transition: transform 0.1s ease;
+  /* タッチ対応 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.05);
+  display: block;
+  border: none;
+}
+
+.item:active {
+  transform: scale(0.995);
+}
+
+/* 以前の.itemスタイルは削除されたため、.post-item-wrapperが代わりに担当 */
 
 /* PostItem: 新しいレイアウト */
 .post-item {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  /* min-height: 110px; */
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Title: 一番大きく */
@@ -361,22 +440,15 @@ button {
   margin: 4px 0 0 0;
 }
 
-/* 区切り線 */
-.post-divider {
-  width: 100%;
-  height: 1px;
-  background: var(--line);
-  margin: 8px 0;
-}
-
 /* Tags row */
 .post-tags-row {
-  padding-left: 4%;
-  padding-bottom: 4%;
+  padding: 0 16px 12px 16px;
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
   align-items: center;
+  background: transparent;
+  border-bottom: 1px solid var(--line);
 }
 
 .meta {
@@ -409,22 +481,34 @@ button {
   white-space: nowrap;
   font-weight: 500;
   line-height: 1;
+  /* タッチ対応 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+  touch-action: manipulation;
 }
 
 .chip:hover {
   background: var(--chip-hover);
 }
 
+.chip:active {
+  transform: scale(0.98);
+}
+
 /* クリック可能なチップ */
 .clickable-chip {
   display: inline-flex;
   align-items: center;
+  text-decoration: none;
 }
 
 .clickable-chip:hover {
   background: var(--chip-hover);
   transform: translateY(-1px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.clickable-chip:active {
+  transform: translateY(0);
 }
 
 .category-chip {
@@ -724,6 +808,14 @@ button {
   gap: 5px;
   padding: 0;
   background: var(--hamburger-bg);
+  /* タッチ対応 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+  touch-action: manipulation;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hamburger:active {
+  transform: scale(0.95);
 }
 
 .hamburger span {
@@ -772,7 +864,7 @@ button {
   }
 
   .main {
-    padding-top: 80px;
+    padding: 80px 12px 20px 12px;
   }
 
   .layout {
@@ -791,11 +883,45 @@ button {
     max-height: 300px;
   }
 
+  /* スマホでのテーマ切り替えボタン */
   .theme-toggle {
     position: fixed;
-    top: 24px;
+    top: 20px;
     right: 20px;
     z-index: 1001;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 8px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .theme-toggle svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* topbarのスマホ対応 */
+  .topbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .search {
+    max-width: none;
+    width: 100%;
+  }
+
+  .pillrow {
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .pill {
+    font-size: 11px;
+    padding: 6px 8px;
   }
 
   .post-list-container {
@@ -803,11 +929,16 @@ button {
   }
 
   .post-item {
-    min-height: 100px;
+    padding: 12px 16px;
+  }
+
+  .post-tags-row {
+    padding: 0 16px 10px 16px;
   }
 
   .post-title {
     font-size: 15px;
+    line-height: 1.4;
   }
 
   .post-excerpt {
@@ -816,5 +947,62 @@ button {
 
   .post-date {
     font-size: 11px;
+  }
+
+  .chip {
+    font-size: 11px;
+    padding: 4px 9px;
+  }
+}
+
+/* さらに小さい画面（iPhone SE等）への対応 */
+@media (max-width: 480px) {
+  .main {
+    padding: 80px 8px 16px 8px;
+  }
+
+  .theme-toggle {
+    top: 16px;
+    right: 16px;
+    min-width: 36px;
+    min-height: 36px;
+    padding: 6px;
+  }
+
+  .theme-toggle svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .hamburger {
+    top: 16px;
+    left: 16px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .search {
+    padding: 8px 10px;
+  }
+
+  .search input {
+    font-size: 16px; /* iOSのズーム防止 */
+  }
+
+  .pill {
+    font-size: 10px;
+    padding: 5px 7px;
+  }
+
+  .post-title {
+    font-size: 14px;
+  }
+
+  .post-excerpt {
+    font-size: 12px;
+  }
+
+  .post-date {
+    font-size: 10px;
   }
 }
