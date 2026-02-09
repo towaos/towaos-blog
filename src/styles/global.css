@@ -239,7 +239,7 @@ button {
   }
 
   .pillrow {
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: auto;
     flex-shrink: 0;
   }
@@ -290,7 +290,7 @@ button {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .pill {
@@ -915,7 +915,7 @@ button {
   }
 
   .pillrow {
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 100%;
   }
 
