@@ -3,7 +3,7 @@ title: '越境パス'
 description: '防衛省サイバーコンテスト2026のWriteupです。'
 pubDate: 2026-02-02
 category: 'CTF'
-tags: ['防衛省サイバーコンテスト', 'Writeup', 'Web', 'injection']
+tags: ['Ministry of Defense Cyber Contest', 'Writeup', 'Web', 'injection']
 ---
 
 # 越境パス - 防衛省サイバーコンテスト
@@ -26,5 +26,5 @@ FAKE_FLAG
 2024-12-01 11:45:34 - Access denied: blocked traversal attempt
 
 ?file=%2e%2e%2f/admin/config/secure/flag.txt
-***
+flag{***}
 ```

@@ -3,7 +3,7 @@ title: 'WebProxyの向こう側'
 description: '防衛省サイバーコンテスト2026のWriteupです。'
 pubDate: 2026-02-02
 category: 'CTF'
-tags: ['防衛省サイバーコンテスト', 'Writeup', 'Web', 'Bypass']
+tags: ['Ministry of Defense Cyber Contest', 'Writeup', 'Web', 'Bypass']
 ---
 
 # WebProxyの向こう側 - 防衛省サイバーコンテスト
@@ -55,5 +55,5 @@ tags: ['防衛省サイバーコンテスト', 'Writeup', 'Web', 'Bypass']
 ```
 ```bash
 # /system/files?path=secrets/flags/&file=flag_20241209.txt
-{"content":"flag{ssrf_1nt3rn4l_4cc355}","created_by":"backup-daemon","file_type":"secret","filename":"flag_20241209.txt","note":"\ud83c\udf89 \u6a5f\u5bc6\u30d5\u30e9\u30b0\u30d5\u30a1\u30a4\u30eb\u306e\u767a\u898b\u306b\u6210\u529f\u3057\u307e\u3057\u305f\uff01"}
+{"content":"flag{***}","created_by":"backup-daemon","file_type":"secret","filename":"flag_20241209.txt","note":"\ud83c\udf89 \u6a5f\u5bc6\u30d5\u30e9\u30b0\u30d5\u30a1\u30a4\u30eb\u306e\u767a\u898b\u306b\u6210\u529f\u3057\u307e\u3057\u305f\uff01"}
 ```

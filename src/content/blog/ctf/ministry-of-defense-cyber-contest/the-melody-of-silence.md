@@ -3,7 +3,7 @@ title: '静寂の調べ'
 description: '防衛省サイバーコンテスト2026のWriteupです。'
 pubDate: 2026-02-02
 category: 'CTF'
-tags: ['防衛省サイバーコンテスト', 'Writeup', 'Web', 'XSS']
+tags: ['Ministry of Defense Cyber Contest', 'Writeup', 'Web', 'XSS']
 ---
 
 # 静寂の調べ - 防衛省サイバーコンテスト
