@@ -365,9 +365,12 @@ button {
 
 /* 投稿アイテム全体のラッパー */
 .post-item-wrapper {
-  /* border-top: 1px solid var(--line); */
   background: var(--panel);
   transition: background 0.15s ease;
+}
+
+.post-item-wrapper:not(:last-child) {
+  border-bottom: 1px solid var(--line);
 }
 
 .post-item-wrapper:hover {
@@ -392,8 +395,6 @@ button {
 .item:active {
   transform: scale(0.995);
 }
-
-/* 以前の.itemスタイルは削除されたため、.post-item-wrapperが代わりに担当 */
 
 /* PostItem: 新しいレイアウト */
 .post-item {
@@ -450,7 +451,6 @@ button {
   gap: 6px;
   align-items: center;
   background: transparent;
-  border-bottom: 1px solid var(--line);
 }
 
 .meta {
