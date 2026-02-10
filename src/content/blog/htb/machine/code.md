@@ -3,7 +3,7 @@ title: 'Code'
 description: 'HackTheBox MachineのWriteupです。'
 pubDate: 2025-12-20
 category: 'HTB'
-tags: ['HTB', 'Machine', 'Writeup', 'Linux', 'Web']
+tags: ['HTB Machine', 'Writeup', 'Linux', 'Web']
 ---
 
 # Code - HackTheBox
