@@ -12,10 +12,6 @@ tags: ['HTB Machine', 'Writeup', 'Linux', 'LimeSurvey', 'Docker']
 ### ポート調査
 ```bash
 nmap 10.129.234.81 -Pn
-Starting Nmap 7.98 ( https://nmap.org ) at 2026-02-15 08:34 +0900
-Nmap scan report for 10.129.234.81
-Host is up (0.093s latency).
-Not shown: 998 closed tcp ports (reset)
 PORT   STATE SERVICE
 22/tcp open  ssh
 80/tcp open  http
