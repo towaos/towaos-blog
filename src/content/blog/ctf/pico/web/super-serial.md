@@ -1,7 +1,7 @@
 ---
 title: 'Super Serial'
 description: 'picoCTFのWriteupです。'
-pubDate: 2025-12-24
+pubDate: 2025-12-24T10:00:00+09:00
 category: 'CTF'
 tags: ['picoCTF', 'Writeup', 'Web', 'PHP Object']
 ---

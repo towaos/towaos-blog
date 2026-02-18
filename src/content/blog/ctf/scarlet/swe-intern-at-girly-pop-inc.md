@@ -1,7 +1,7 @@
 ---
 title: 'SWE intern at girly pop inc'
 description: 'ScarletCTFのWriteupです。'
-pubDate: 2026-01-12
+pubDate: 2026-01-12T10:00:00+09:00
 category: 'CTF'
 tags: ['ScarletCTF', 'Writeup', 'Web', 'Git', 'DirTraversal']
 ---

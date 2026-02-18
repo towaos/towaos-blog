@@ -1,7 +1,7 @@
 ---
 title: 'DISKO 3'
 description: 'picoCTFのWriteupです。'
-pubDate: 2026-02-09T22:31
+pubDate: 2026-02-09T22:31:00+09:00
 category: 'CTF'
 tags: ['picoCTF', 'Writeup', 'Forensics']
 ---

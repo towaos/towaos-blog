@@ -1,7 +1,7 @@
 ---
 title: 'Fly.io server setup'
 description: 'Fly.ioを使ってみました。'
-pubDate: 2025-12-28
+pubDate: 2025-12-28T10:00:00+09:00
 category: 'Fly.io'
 tags: ['Fly.io']
 ---

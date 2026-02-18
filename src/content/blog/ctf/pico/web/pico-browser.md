@@ -1,7 +1,7 @@
 ---
 title: 'picobrowser'
 description: 'picoCTFのWriteupです。'
-pubDate: 2026-01-05
+pubDate: 2026-01-05T10:04:00+09:00
 category: 'CTF'
 tags: ['picoCTF', 'Writeup', 'Web', 'UserAgent']
 ---

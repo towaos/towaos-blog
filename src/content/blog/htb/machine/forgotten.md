@@ -1,7 +1,7 @@
 ---
 title: 'Forgotten'
 description: 'HackTheBox MachineのWriteupです。'
-pubDate: 2026-02-17T19:30
+pubDate: 2026-02-17T19:30:00+09:00
 category: 'HTB'
 tags: ['HTB Machine', 'Writeup', 'Linux', 'LimeSurvey', 'Docker']
 ---

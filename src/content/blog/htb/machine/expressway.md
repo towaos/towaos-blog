@@ -1,7 +1,7 @@
 ---
 title: 'Expressway'
 description: 'HackTheBox MachineのWriteupです。'
-pubDate: 2026-01-16T10:00
+pubDate: 2026-01-16T10:00:00+09:00
 category: 'HTB'
 tags: ['HTB Machine', 'Writeup', 'Linux', 'IKE', 'PSK', 'sudoer', 'CVE-2025-32463']
 ---

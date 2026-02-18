@@ -1,7 +1,7 @@
 ---
 title: 'Irish-Name-Repo 2'
 description: 'picoCTFのWriteupです。'
-pubDate: 2026-01-05
+pubDate: 2026-01-05T10:02:00+09:00
 category: 'CTF'
 tags: ['picoCTF', 'Writeup', 'Web', 'SQL injection']
 ---

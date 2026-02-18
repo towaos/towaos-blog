@@ -1,7 +1,7 @@
 ---
 title: 'Web Gauntlet 3'
 description: 'picoCTFのWriteupです。'
-pubDate: 2025-12-30
+pubDate: 2025-12-30T10:00:00+09:00
 category: 'CTF'
 tags: ['picoCTF', 'Writeup', 'Web', 'SQL injection', 'SQLite']
 ---

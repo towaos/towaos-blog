@@ -1,7 +1,7 @@
 ---
 title: '会員限定の裏口'
 description: '防衛省サイバーコンテスト2026のWriteupです。'
-pubDate: 2026-02-02
+pubDate: 2026-02-02T10:03:00+09:00
 category: 'CTF'
 tags: ['Ministry of Defense Cyber Contest', 'Writeup', 'Web', 'injection']
 ---

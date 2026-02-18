@@ -1,7 +1,7 @@
 ---
 title: 'Most Cookies'
 description: 'picoCTFのWriteupです。'
-pubDate: 2025-12-26
+pubDate: 2025-12-26T10:00:00+09:00
 category: 'CTF'
 tags: ['picoCTF', 'Writeup', 'Web', 'Flask', 'Flask Session']
 ---

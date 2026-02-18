@@ -1,7 +1,7 @@
 ---
 title: 'Crack the Gate 1'
 description: 'picoCTFのWriteupです。'
-pubDate: 2025-12-20
+pubDate: 2025-12-20T10:00:00+09:00
 category: 'CTF'
 tags: ['picoCTF', 'Writeup', 'Web', 'Caesar Cipher']
 ---

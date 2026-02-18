@@ -1,7 +1,7 @@
 ---
 title: 'SSTI2'
 description: 'picoCTFのWriteupです。'
-pubDate: 2025-12-22
+pubDate: 2025-12-22T10:00:00+09:00
 category: 'CTF'
 tags: ['picoCTF', 'Writeup', 'Web', 'SSTI']
 ---

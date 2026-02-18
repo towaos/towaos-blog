@@ -1,7 +1,7 @@
 ---
 title: 'Startup Company'
 description: 'picoCTFのWriteupです。'
-pubDate: 2026-01-04
+pubDate: 2026-01-04T10:00:00+09:00
 category: 'CTF'
 tags: ['picoCTF', 'Writeup', 'Web', 'SQL injection', 'SQLite']
 ---

@@ -1,7 +1,7 @@
 ---
 title: 'Cross-site scripting < Reflected >'
 description: 'PortSwiggerのXSS記録'
-pubDate: 2026-02-09T15:00
+pubDate: 2026-02-09T10:00:00+09:00
 category: 'PortSwigger'
 tags: ['PortSwigger', 'Writeup', 'Web', 'XSS', 'Reflected']
 ---

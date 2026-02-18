@@ -1,14 +1,14 @@
 ---
 title: 'Happy New Year 2026🐴'
 description: 'Happy New Year'
-pubDate: 2026-01-01
+pubDate: 2026-01-01T10:00:00+09:00
 category: 'Greetings'
 tags: ['Greetings']
 ---
 
 # Happy New Year - 2026🐴
 
-![Happy New Year 2026](../../../assets/HNY-2026.jpg)
+![Happy New Year 2026](/public/HNY-2026.jpg)
 
 > **あけましておめでとうございます。**   
 > **今年もよろしくお願いします。**

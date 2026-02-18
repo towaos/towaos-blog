@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Logo from '../assets/towaos_icon.png';
 
 const allPosts = await getCollection('blog');
 
@@ -28,7 +29,9 @@ const currentPath = Astro.url.pathname;
 
 <aside class="sidebar">
   <a href="/" class="brand" role="banner">
-    <div class="logo">😍</div>
+    <div class="logo">
+      <img src={Logo.src} alt="logo">
+    </div>
     <div>
       <h1>{SITE_TITLE}</h1>
       <p>{SITE_DESCRIPTION}</p>

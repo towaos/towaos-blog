@@ -1,7 +1,7 @@
 ---
 title: 'Conversor'
 description: 'HackTheBox MachineのWriteupです。'
-pubDate: 2026-01-19T10:00
+pubDate: 2026-01-19T10:00:00+09:00
 category: 'HTB'
 tags: ['HTB Machine', 'Writeup', 'Linux', 'XML', 'XSLT', 'Needrestart', 'CVE-2024-48990']
 ---

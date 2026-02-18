@@ -1,7 +1,7 @@
 ---
 title: 'Nice to meet you.'
 description: 'はじめまして'
-pubDate: 2025-12-19
+pubDate: 2025-12-19T10:00:00+09:00
 category: 'Greetings'
 tags: ['Greetings']
 ---
