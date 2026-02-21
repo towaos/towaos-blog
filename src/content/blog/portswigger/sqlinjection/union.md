@@ -3,7 +3,7 @@ title: 'SQL injection Union attack'
 description: 'PortSwiggerの記録'
 pubDate: 2026-01-08T10:00:00+09:00
 category: 'PortSwigger'
-tags: ['PortSwigger', 'Writeup', 'Web', 'SQL injection', 'Union']
+tags: ['PortSwigger', 'Web', 'SQL injection']
 ---
 
 # SQL injection Union attack - PortSwigger

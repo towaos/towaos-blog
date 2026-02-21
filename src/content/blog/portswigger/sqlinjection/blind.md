@@ -3,7 +3,7 @@ title: 'Blind SQL injection'
 description: 'PortSwiggerの記録'
 pubDate: 2026-01-08T10:00:00+09:00
 category: 'PortSwigger'
-tags: ['PortSwigger', 'Writeup', 'Web', 'SQL injection', 'Blind']
+tags: ['PortSwigger', 'Web', 'SQL injection']
 ---
 
 # Blind SQL injection - PortSwigger
