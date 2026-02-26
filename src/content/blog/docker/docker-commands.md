@@ -1,6 +1,6 @@
 ---
 title: 'Docker Commands'
-description: 'よく使うDockerコマンド。'
+description: 'よく使うコマンド'
 pubDate: 2025-12-22T10:00:00+09:00
 category: 'Container'
 tags: ['Docker']

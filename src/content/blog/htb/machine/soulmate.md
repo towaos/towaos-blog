@@ -1,6 +1,6 @@
 ---
 title: 'Soulmate'
-description: 'HackTheBox MachineのWriteupです。'
+description: 'HackTheBox MachineのWriteup'
 pubDate: 2026-01-25T10:00:00+09:00
 category: 'HTB'
 tags: ['HTB Machine', 'Writeup', 'Linux', 'VHOST', 'CrushFTP', 'Erlang', 'CVE-2025-31161', 'CVE-2025-32433']

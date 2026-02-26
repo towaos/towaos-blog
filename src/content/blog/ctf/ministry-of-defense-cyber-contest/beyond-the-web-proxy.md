@@ -1,6 +1,6 @@
 ---
 title: 'WebProxyの向こう側'
-description: '防衛省サイバーコンテスト2026のWriteupです。'
+description: '防衛省サイバーコンテスト2026のWriteup'
 pubDate: 2026-02-02T10:01:00+09:00
 category: 'CTF'
 tags: ['Ministry of Defense Cyber Contest', 'Writeup', 'Web', 'Bypass']

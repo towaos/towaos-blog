@@ -3,7 +3,7 @@ title: 'Server-side request forgery < SSRF >'
 description: 'PortSwigger SSRFの記録'
 pubDate: 2026-02-26T22:20:00+09:00
 category: 'PortSwigger'
-tags: ['PortSwigger', 'Web', 'SSRF']
+tags: ['Web', 'SSRF']
 ---
 
 # Server-side request forgery - PortSwigger
@@ -34,7 +34,8 @@ stockApi=http%3a//localhost/admin
 
 Burp の intruder を使用して対象の IP を調べる
 
-205 だけ respons が 404
+.205 だけ respons が 404  
+それ以外は 500
 
 ```bash
 stockApi=http%3a//192.168.0.1:8080

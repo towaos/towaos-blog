@@ -1,6 +1,6 @@
 ---
 title: 'mutation mutation'
-description: 'LA CTF 2026のWriteupです。'
+description: 'LA CTF 2026のWriteup'
 pubDate: 2026-02-19T22:22:00+09:00
 category: 'CTF'
 tags: ['LA CTF', 'Writeup', 'Web']

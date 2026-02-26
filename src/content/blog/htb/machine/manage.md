@@ -1,6 +1,6 @@
 ---
 title: 'Manage'
-description: 'HackTheBox MachineのWriteupです。'
+description: 'HackTheBox MachineのWriteup'
 pubDate: 2026-02-17T19:35:00+09:00
 category: 'HTB'
 tags: ['HTB Machine', 'Writeup', 'Linux', 'Java RMI:JMX', 'Google Authenticator']

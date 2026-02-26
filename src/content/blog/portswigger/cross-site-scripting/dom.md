@@ -3,7 +3,7 @@ title: 'Cross-site scripting < DOM >'
 description: 'PortSwigger XSSの記録'
 pubDate: 2026-01-17T10:00:00+09:00
 category: 'PortSwigger'
-tags: ['PortSwigger', 'Web', 'XSS']
+tags: ['Web', 'XSS']
 ---
 
 # Cross-site scripting < DOM > - PortSwigger

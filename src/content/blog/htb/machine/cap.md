@@ -1,6 +1,6 @@
 ---
 title: 'Cap'
-description: 'HackTheBox MachineのWriteupです。'
+description: 'HackTheBox MachineのWriteup'
 pubDate: 2026-02-10T18:40:00+09:00
 category: 'HTB'
 tags: ['HTB Machine', 'Writeup', 'Linux', 'Web', 'Capability', 'FTP', 'Packet Capture']

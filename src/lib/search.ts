@@ -5,6 +5,8 @@ interface SearchResult {
   category: string;
   tags: string[];
   pubDate: string;
+  updatedDate: string | null;
+  displayDate: string;
   content: string;
 }
 
@@ -73,19 +75,21 @@ export function createGlobalSearchHandler(
         } else {
           // 検索結果を表示
           postList.innerHTML = results.map(post => {
-            const date = new Date(post.pubDate);
+            const date = new Date(post.displayDate);
+            const isUpdated = post.updatedDate != null;
             const formattedDate = date.toLocaleDateString('ja-JP', {
               year: 'numeric',
               month: 'long',
               day: 'numeric'
             });
+            const dateLabel = isUpdated ? `<span class="date-label">Updated: </span>${formattedDate}` : formattedDate;
             
             return `
             <div class="post-item-wrapper">
               <a href="/${post.slug}" class="item post-item">
                 <div class="post-title">${post.title}</div>
                 ${post.description ? `<div class="post-excerpt">${post.description}</div>` : ''}
-                <div class="post-date">${formattedDate}</div>
+                <div class="post-date"><time datetime="${date.toISOString()}">${dateLabel}</time></div>
               </a>
               <div class="post-tags-row" role="list">
                 <a href="/categories/${post.category.toLowerCase()}" class="chip clickable-chip category-chip" role="listitem">${post.category}</a>

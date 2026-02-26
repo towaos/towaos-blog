@@ -1,6 +1,6 @@
 ---
 title: 'Fly.io server setup'
-description: 'Fly.ioを使ってみました。'
+description: 'Fly.ioの使い方'
 pubDate: 2025-12-28T10:00:00+09:00
 category: 'Infrastructure'
 tags: ['Fly.io']
@@ -8,7 +8,7 @@ tags: ['Fly.io']
 
 # Fly.io - ServerSetup
 
-CTF用のWeb問題の検証環境 として Fly.io を使ってみたメモ。
+CTF用のWeb問題の検証環境 として Fly.io を使ってみた。
 
 ## Flyのセットアップ手順
 

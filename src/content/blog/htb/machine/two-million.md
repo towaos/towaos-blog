@@ -1,6 +1,6 @@
 ---
 title: 'TwoMillion'
-description: 'HackTheBox MachineのWriteupです。'
+description: 'HackTheBox MachineのWriteup'
 pubDate: 2026-02-14T10:15:00+09:00
 category: 'HTB'
 tags: ['HTB Machine', 'Writeup', 'Linux', 'JS obfuscation', 'ROT13', 'API', 'CVE-2023-0386']

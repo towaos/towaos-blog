@@ -27,9 +27,13 @@ export function getPageUrl(page: number, baseUrl: string = '/'): string {
 }
 
 /**
- * 投稿を日付順にソート
+ * 投稿を日付順にソート（updatedDate があればそれを優先）
  */
 export function sortPostsByDate(posts: BlogPost[]): BlogPost[] {
-  return posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  return posts.sort((a, b) => {
+    const dateA = (a.data.updatedDate ?? a.data.pubDate).valueOf();
+    const dateB = (b.data.updatedDate ?? b.data.pubDate).valueOf();
+    return dateB - dateA;
+  });
 }
 

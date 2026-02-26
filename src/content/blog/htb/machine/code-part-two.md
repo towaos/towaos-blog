@@ -1,6 +1,6 @@
 ---
 title: 'CodePartTwo'
-description: 'HackTheBox MachineのWriteupです。'
+description: 'HackTheBox MachineのWriteup'
 pubDate: 2026-01-28T10:00:00+09:00
 category: 'HTB'
 tags: ['HTB Machine', 'Writeup', 'Linux', 'Web', 'js2py', 'npbackup-cli', 'CVE-2024-28397']

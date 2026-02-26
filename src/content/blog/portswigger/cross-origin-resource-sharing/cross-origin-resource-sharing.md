@@ -3,7 +3,7 @@ title: 'Cross-origin resource sharing < CORS >'
 description: 'PortSwigger CORSの記録'
 pubDate: 2026-02-24T22:25:00+09:00
 category: 'PortSwigger'
-tags: ['PortSwigger', 'Web', 'CORS']
+tags: ['Web', 'CORS']
 ---
 
 # Cross-origin resource sharing - PortSwigger

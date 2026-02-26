@@ -5,6 +5,7 @@ import BlogLayout from '../layouts/BlogLayout.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import TableOfContents from '../components/TableOfContents.astro';
 import BackButton from '../components/BackButton.astro';
+import { getDisplayDate, isUpdatedDate } from '../types/blog';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -46,14 +47,12 @@ const { Content } = await post.render();
       <div class="content">
         <h3>{post.data.title}</h3>
         <div class="submeta">
-          <span><FormattedDate date={post.data.pubDate} /></span>
-          <span>•</span>
+          <span><FormattedDate date={getDisplayDate(post.data)} isUpdated={isUpdatedDate(post.data)} /></span>
           <a href={`/categories/${post.data.category.toLowerCase()}`} class="chip clickable-chip category-chip">
             {post.data.category}
           </a>
           {post.data.tags.length > 0 && (
             <>
-              <span>•</span>
               {post.data.tags.map(tag => (
                 <a href={`/tags/${tag.toLowerCase()}`} class="chip clickable-chip tag-chip">
                   #{tag}

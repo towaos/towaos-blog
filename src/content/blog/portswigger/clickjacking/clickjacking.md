@@ -3,7 +3,7 @@ title: 'Clickjacking'
 description: 'PortSwigger Clickjackingの記録'
 pubDate: 2026-02-21T22:10:00+09:00
 category: 'PortSwigger'
-tags: ['PortSwigger', 'Web', 'Clickjacking']
+tags: ['Web', 'Clickjacking']
 ---
 
 # Clickjacking - PortSwigger

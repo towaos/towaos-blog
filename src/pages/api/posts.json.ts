@@ -13,7 +13,9 @@ export const GET: APIRoute = async () => {
         category: post.data.category,
         tags: post.data.tags,
         pubDate: post.data.pubDate.toISOString(),
-        content: post.body, // markdown本文を追加
+        updatedDate: post.data.updatedDate?.toISOString() ?? null,
+        displayDate: (post.data.updatedDate ?? post.data.pubDate).toISOString(),
+        content: post.body,
       };
     })
   );

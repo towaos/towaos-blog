@@ -1,6 +1,6 @@
 ---
 title: 'Event-Viewing'
-description: 'picoCTFのWriteupです。'
+description: 'picoCTFのWriteup'
 pubDate: 2026-02-09T22:32:00+09:00
 category: 'CTF'
 tags: ['picoCTF', 'Writeup', 'Forensics']
