@@ -78,7 +78,7 @@ oliver@editor:~$ ls
 user.txt
 ```
 
-## 特権昇格
+## 権限昇格
 
 sビットを調べてみると netdata が使われていた
 
