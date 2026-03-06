@@ -86,7 +86,7 @@ www-data@reset:/var/www/html$ cat /etc/hosts.equiv
 1つのターミナルウィンドウの中で複数の仮想端末（セッション）を同時に管理できるソフト
 
 ```bash
-www-data@reset:/var/www/html$ ps -aux
+www-data@reset:/var/www/html$ ps aux
 
 sadm        1171  0.0  0.2   8764  4140 ?        Ss   00:18   0:00 tmux new-session -d -s sadm_session
 sadm        1179  0.0  0.2   8676  5400 pts/3    Ss+  00:18   0:00 -bash
